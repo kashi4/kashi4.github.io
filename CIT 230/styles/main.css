@@ -34,9 +34,16 @@ header img {
     width: 200px;
     height: auto;    
     float: right;
-    padding-top: 3em;
+    padding-top: 5em;
     transform: rotate(90deg);
-
+    border-radius: 3px;
+    padding: 2px;
+    position: relative;
+    bottom:10px;
+    top:25px;
+    Right:5px;
+    left:25px;
+    
 }
 
 
@@ -50,3 +57,4 @@ ul {
     margin: 0 auto;
     max-width: 300px;
 }
+
