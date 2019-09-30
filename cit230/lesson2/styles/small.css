@@ -12,3 +12,8 @@ body{
     font-size:14px ;
     background-color: chartreuse;
 }
+
+div {
+    padding: 20px;
+    border: 5px solid #4CAF50;
+  }
