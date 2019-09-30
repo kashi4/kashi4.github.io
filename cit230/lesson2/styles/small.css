@@ -14,11 +14,14 @@ body{
 }
 
 div {
-    padding: 20px;
-    border: 5px solid #4CAF50;
+    padding: 30px;
+    border: 50px solid #4CAF50;
+    
+      
   }
 
   section {
-      margin-left: px;
-      margin-right: px;
+      margin-left:20px;
+      margin-right: 20px;
   }
+
