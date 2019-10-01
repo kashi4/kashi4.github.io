@@ -1,77 +1,60 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito&display=swap');
 
-body{
-    background-color:#b5e8f5;
+
+header {
+    background-color:blueviolet;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
-#title{
-    color: white;
-    font-size: 60px;
-    text-shadow: 2px 2px #4696aa;
+body {
+    font-family: 'Nunito', sans-serif;
+    background-color: #FAF8D4;
 }
-
-h1, h2, #title{
-    font-family: 'Lora', serif;
-}
+div {
+    width:50%;
+    border: 2px solid #4CAF50;
+  }
 
 section {
-    float: left;
-    width: 27.2%;
-    margin: 1.6%;
-    color: #ffffff;
-    background-color: #4696aa;
-    border-radius: 20px;
-    padding: 20px;
-    font-family: 'Source Sans Pro', sans-serif;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.title {
+    font-size: 1em;
+    text-align: center;
+    font-weight: bold;
+    color: #FAF8D4;
+}
+
+
+h1, h2, a {
+    text-align: center;
+}
+a{
+    display: block;
 }
 
 img {
-    border: solid #641c2e 10px;
-    border-radius: 10px;
+   /* width: 300px; */
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+   grid-template-columns: auto auto auto auto auto auto auto auto auto;
+   margin-top: 10px;
+   width: 30%;
+   box-shadow: 5px 5px 3px grey;
 }
 
-.center {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 70%;
-  }
-
-h1, h2, p {
-    text-align: center;
-}
-
-.button {
-    background-color: #c4bbb4;
-    border: none;
-    color: white;
-    padding: 16px 32px;
-    text-align: center;
-    font-size: 16px;
-    margin: 4px 2px;
-    opacity: 0.88;
-    transition: 0.3s;
-    display: inline-block;
+section a:link {
     text-decoration: none;
-    cursor: pointer;
-    font-family: 'Source Sans Pro', sans-serif;
-  }
+}
 
-  .button:hover {
-      opacity: 1
-    }
+section a:hover {
+    color: rgb(0, 255, 13);
+}
 
-
-.more{               
-    width: 100%;
-    text-align: center;        
-    margin: 10px;
-    padding: 0px;
- }
-
- footer {
-     color: white;
- }
-
- a:visited {
-     color: white;
- }
+section a:active {
+    color: black;
+}
