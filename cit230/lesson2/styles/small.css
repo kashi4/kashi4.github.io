@@ -3,15 +3,13 @@ header {
     background-color: blueviolet;
     padding-top: 10px;
     padding-bottom:10px;
-    border: 1px solid #333;
-	box-shadow: 0 0 10px #000;
+   
 }
 
 body{
-    font-display:'Exo', sans-seri;
-    font-size:14px ;
-    background-color: chartreuse;
-}
+    font-family: Calibri, 'Trebuchet MS', sans-serif;
+
+    }
 
 div {
     padding: 30px;
