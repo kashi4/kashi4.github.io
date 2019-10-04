@@ -1,0 +1,26 @@
+
+/* html selector */
+body {
+    margin: 0;
+    padding: 0;
+}
+li {
+    float: left;
+     margin: 10px;
+    /* margin: 0 10px 10px 10px; */
+    /* margin: 10px 5px; */
+    list-style: none;   
+}
+
+li a {
+    text-decoration: none;
+}
+/* class selector */
+.highlight {
+    font-weight: bold;
+}
+
+/* id selector */
+#active {
+    background-color: cyan;
+}
