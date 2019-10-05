@@ -1,59 +1,44 @@
 
+* { margin: 0; box-sizing: border-box; } 
+
 body { 
     font-size: 16px; 
     line-height: 32px;
-    font-family: sans-serif; /* Ubuntu, sans-serif */;
-    color: #000; /* #xxxxxx */;
+    font-family: 'Rubik', sans-serif;
+    /* font-family: sans-serif; */
+    color: #000;
 }
-
 h1 {
-    font-size: 2.4rem /* x.xrem  (rem is a unit of measure) */;
-    color: #fff; /* #xxxxxx */;
+    font-size: 2.4rem;
+    color: #fff;
 }
-
 h2 {
-    font-size: 2.0rem; /* x.xrem */;
+    font-size: 1.5rem;
     text-align: center;
     border-bottom: 1px solid #bbb;
 }
-
 header, main, footer {
     margin: 1.25rem auto;
     padding: .5rem;
-    max-width: 800px; /* xxxpx (px = pixel is a unit of measure)  */;
+    max-width: 800px;
 }
 header, footer, footer a {
     text-align: center;
-    background-color: rgb(0, 139, 63); /* */;
+    background-color: darkblue;
     color: whitesmoke;
-    /* Comment */
 }
-
 header img {
-    width: 200px;
-    height: auto;    
+    width: 5%;
+    height: auto;
     float: right;
-    padding-top: 5em;
-    transform: rotate(90deg);
-    border-radius: 3px;
-    padding: 2px;
-    position: relative;
-    bottom:10px;
-    top:25px;
-    Right:5px;
-    left:25px;
-    
 }
-
-
-
 footer {
-    font-size: smaller; /* smaller */;
+    font-size: smaller;
 }
-
 ul {
-    /* text-align: center; */
     margin: 0 auto;
-    max-width: 300px;
+    max-width: 600px;
 }
-
+#lastModified {
+    font-size: 100%;
+}
