@@ -1,0 +1,68 @@
+@media only screen and (min-width: 700px) {
+
+
+    /*---------- BODY   ---------- */
+
+    /*---------- HEADER   ---------- */
+
+    /*---------- NAV  ---------- */
+
+    #menu {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        list-style: none;
+        font-family: 'Lora', 'serif';
+        background: #2A4359;
+        text-align: center;
+        padding: 25px;
+        }
+        
+        li a{
+            text-decoration: none;
+            color: white;
+        }
+    a.menuLinks:visited {
+        color: white;
+    }    
+    
+    a.menuLinks:hover {
+        background: #49736F;
+        padding: 24px;
+        text-align: center;
+    }
+    
+
+    /*---------- MAIN  ---------- */
+
+    #mainpagelogo {
+        width: 100px;
+        left: 44%;
+    }
+
+    #mainpageparagraph {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        font-size: 16px;
+        padding: 25px;
+        top: 35%;
+    }
+
+    /*---------- SECTIONS   ---------- */
+
+    /*---------- ARTICLES   ---------- */
+
+    /*---------- FOOTER  ---------- */
+
+    footer {
+        text-align: center;
+        padding: 20px;
+        background: #2A4359;
+        color: white;
+        bottom: 0;
+        width: 100%;
+    }
+
+    /*---------- ETC  ---------- */
+}
