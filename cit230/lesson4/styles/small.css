@@ -1,0 +1,12 @@
+body {
+    background-color: lightblue;
+    background-image: url("img_weather10.jpg");
+  }
+  
+  header h2{
+    text-transform: uppercase;
+    letter-spacing: .8em;
+    font-size: 1em;
+    margin-top: 8pt;
+    color: white;
+}
