@@ -2,11 +2,37 @@ body {
     background-color: lightblue;
     background-image: url("img_weather10.jpg");
   }
+
+  header {
+    background-color: #fff;
+    padding: 5px 0;
+    display: flex;
+    align-items:center;
+    justify-content:center;
+  }
+  
+  header img {
+    width: 80px;
+    height: auto;
+  }
+  
   
   header h2{
     text-transform: uppercase;
     letter-spacing: .8em;
     font-size: 1em;
     margin-top: 8pt;
-    color: white;
+    color:darkred
+}
+img {
+  width: 100px;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #2A4359;
+  color: white;
+  bottom: 0;
+  width: 100%;
 }
