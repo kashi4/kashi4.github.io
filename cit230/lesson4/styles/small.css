@@ -1,38 +1,140 @@
-body {
-    background-color: lightblue;
-    background-image: url("img_weather10.jpg");
-  }
 
-  header {
-    background-color: #fff;
-    padding: 5px 0;
-    display: flex;
-    align-items:center;
-    justify-content:center;
-  }
-  
-  header img {
-    width: 80px;
-    height: auto;
-  }
-  
-  
-  header h2{
-    text-transform: uppercase;
-    letter-spacing: .8em;
-    font-size: 1em;
-    margin-top: 8pt;
-    color:darkred
+body {
+  margin: auto;
 }
-img {
-  width: 100px;
+
+.content1 {
+  display: flex;
+  border: solid 1px;
+  align-items: flex-start;
+  justify-content: space-around;
+  margin: 5px;
 }
+
+.content2 {
+  border: solid 1px;
+  margin: 5px;
+}
+
+.content3 {
+  border: solid 1px;
+  margin: 5px;
+}
+
+.content4 {
+  border: solid 1px;
+  margin: 5px;
+}
+
+h1 {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  margin: 0;
+}
+
+h2 {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif, cursive;
+  
+}
+
+
+header {
+background-color:lightblue;
+padding: 5px 0;
+display: flex;
+align-items:center;
+  justify-content:center;
+
+}
+
+header img {
+width: 100px;
+height: auto;
+}
+
+.headings {
+display: flex;
+flex-direction: column;
+}
+
+.headings h1 {
+font-size: 1.6rem;
+margin: 0 0 17px;
+}
+
 
 footer {
+  background-color:lightblue;
+  max-width: 1100px;
+  margin: 0 auto;
   text-align: center;
-  padding: 20px;
-  background: #2A4359;
-  color: white;
-  bottom: 0;
-  width: 100%;
 }
+
+.location {
+  border: none;
+}
+
+main {
+  display: grid;
+  grid-column-gap: 25px;
+  grid-template-rows: auto;
+  box-sizing: border-box;
+  background-color:rgba(0, 0, 255, 0.123);
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 25px;
+}
+
+.motto {
+font-style: italic;
+letter-spacing: 1pt;
+color:rgb(255, 255, 255);
+margin-left: 60px;
+font-size: 1.3rem;
+}
+
+nav {
+margin: 0 auto;
+max-width: 760px;
+background-color:lightseagreen;
+}
+
+.navigation {
+list-style: none;
+text-align: center;
+padding: 0;
+}
+
+.navigation li:first-child {
+display: block;
+}
+
+.navigation li {
+display: none;
+}
+
+
+.navigation a {
+display: block;
+color: #020916;
+padding: 0.75rem;
+text-align: center;
+text-decoration: none;
+}
+
+.location{
+  text-align: center;
+}
+
+.navigation a:hover {
+  color: #000;
+font-weight: 700;
+}
+
+p {
+  font-family: 'ZCOOL XiaoWei', serif;
+}
+
+.responsive li {
+display: block;
+}
+

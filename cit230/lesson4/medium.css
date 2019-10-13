@@ -1,60 +1,30 @@
-@media only screen and (min-width: 700px) {
+@media only screen and (min-width: 32.5em) {
 
+   header img {
+        width: 120px;
+    }
 
-    /*---------- BODY   ---------- */
+	.headings h1 {
+		font-size: 3rem;
+	}
 
-    /*---------- HEADER   ---------- */
-
-    /*---------- NAV  ---------- */
-
-    #menu {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-evenly;
-        list-style: none;
-        font-family: 'Lora', 'serif';
-        background: #2A4359;
-        text-align: center;
-        padding: 25px;
-        }
-        
-        li a{
-            text-decoration: none;
-            color: white;
-        }
-    a.menuLinks:visited {
-        color: white;
-    }    
+    #logo{
+        width: 110px;
+    }
+	
     
-    a.menuLinks:hover {
-        background: #49736F;
-        padding: 24px;
-        text-align: center;
-    }
+	.navigation {
+		display: flex;
+	}
+	.navigation li:first-child {
+		display: none;
+	}
+	.navigation li {
+		display: block;
+		flex: 1 1 100%;
+	}
+	.navigation li a {
+	color: #052a69;
     
-
-    /*---------- MAIN  ---------- */
-
-    #mainpagelogo {
-        width: 100px;
-        left: 44%;
-    }
-
-    #mainpageparagraph {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        font-size: 16px;
-        padding: 25px;
-        top: 35%;
-    }
-
-    /*---------- SECTIONS   ---------- */
-
-    /*---------- ARTICLES   ---------- */
-
-    /*---------- FOOTER  ---------- */
-
-  
-
-    /*---------- ETC  ---------- */
+	}
+}
