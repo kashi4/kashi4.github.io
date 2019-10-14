@@ -83,6 +83,9 @@ body {
     padding: 25px;
   }
   
+  table, th, td {
+      border: 1px solid blue;
+  }
   .motto {
   font-style: italic;
   letter-spacing: 1pt;
