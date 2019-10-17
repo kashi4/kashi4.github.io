@@ -25,3 +25,9 @@ currentDateString += ' ' + month;
 currentDateString += ' ' + currentDate.getFullYear();
 document.getElementById('currentDate').innerHTML = currentDateString;
 //debugging
+
+// create 5 day forcats
+
+
+
+
