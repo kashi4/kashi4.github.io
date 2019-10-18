@@ -1,182 +1,256 @@
-body {
-    margin: auto;
-    
-  }
-  
-  .content1 {
-    display: flex;
-    align-items: flex-start;
-    justify-content: space-around;
-    margin: 5px;
-    border: 2px solid black;
-    border-radius: 5px;
-  }
-  
-  .content2 {
-    border: 2px solid rgb(79,185,227);
-    margin: 5px;
-  }
-  
-  .content3 {
-    border: 2px solid rgb(79,185,227);
-    margin: 5px;
-  }
-  
-  .content4 {
-    border: 2px solid rgb(79,185,227);
-    margin: 5px;
-  }
-  
-  h1 {
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    margin: 0;
-  }
-  
-  h2 {
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif, cursive;
-    text-align: center;
-    margin: 0;        
-  }
+@import url('https://fonts.googleapis.com/css?family=Raleway:100,400,500,700,900&display=swap');
 
-    .herodiv {
-      position: relative;
-      border: .5px dashed turquoise;
-      display: block;
-      height: 500px;
-      margin: 0 auto;
+*{
+    font-family: 'Raleway', sans-serif;  
+}
 
-  }
+body{
+    min-width: 300px;
+    background-image: url("/cit230/lesson5/images/hero12.JPG");
+    background-size: cover;
+    background-position: center bottom;
+    background-attachment: fixed;
 
-  #background {
-    max-width: 100%;
-    height: 100%;
-  }
+}
 
-  .hero-ph {
-    margin: 10px;
-    background-color:rgba(255, 255, 255, 0.432);
-    border: 1px solid #333;
-    width: 100%;
-    height: 250px;
+h2 {
+  text-align: center;
+
+}
+
+.herodiv {
+  margin: 10px;
+  position: relative;
+  width: 100%;
+  height: 300px;
+
+}
+
+.hero-ph {
+  margin: 10px auto;
+  width: 900px;
+  height: 300px;
+}
+
+
+
+.weathersummary {
+  position: absolute;
+  top: 50px;
+  left: 50px;
+  background:radial-gradient(lightblue);
+  border: 1px solid blue;
+  padding: .5rem;
+  box-shadow: 0 0 30px #888;
+
+}
+
+header img{
+    width: 80px;
    
-  }
+}
 
-    .weathersummary {
-    position: absolute;
-    top: 50px;
-    left: 50px;
-    background: radial-gradient(lightblue,skyblue);
-    border: 1px ridge skyblue;
-    padding: .5rem;
-    box-shadow: 0 0 30px #020916;
-  } 
+
+#heroimg{
+/* The image used */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 50%;
+    position: relative;
+    margin-bottom: 30px;
+
+}
+
+#heroimg h1{
+    font-size: 3.6em;
+    font-weight: 400;
+    border-left: .2em solid rgb(0, 157, 230);
+    padding-left: .3em;
+    margin-top: 0px;
+    color:skyblue;
+    text-shadow:white;
   
-  
-  header {
+}
+
+#heroimg section{
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10pt;
+    color: white;
+    display: inline-block;
+    width: 200px;
+}
+
+#heroimg h2{
+    text-transform: uppercase;
+    font-size: .9em;
+    margin-top: 0px;
+    border-bottom: black 1px solid;
+}
+
+.forecast5{
+    display: none;
+}
+
+.section-container section{
+    margin-bottom: 30pt;
+}
+
+
+.section-container h2{
+    text-transform: uppercase;
+    letter-spacing: 3pt;
+    font-size: 1em;
+    font-weight: 700;
+    display: inline-block;
+    background-color: #353535;
+    color: white;
+    padding: 5pt 10pt;
+    max-width: 350px;
+    border-left: .5em solid rgb(0, 157, 230);
+
+}
+
+.section-container td, .section-container th{
+    text-align: left;
+    padding: 8pt;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+}
+
+.section-container article{
+    padding: 25pt 15pt 15pt;
+    background-color: rgba(255, 255, 255, 0.7);
+    margin-top: -25pt;
+    border-radius: 0pt 10pt 10pt 10pt;
+    line-height: 1.3em;
+}
+/* #news{
+    max-width: 550px;
+} */
+
+.article-date{
+   margin-top: 0px;
+   padding-bottom: 10px;
+   display: block;
+   font-weight: 700;
+}
+
+.section-container article img{
+    width: 100%;
+}
+
+
+#contact iframe{
+    display: none;
+}
+
+.section-container h3{
+    font-size: 1em;
+    margin: 0px;
+}
+.section-container address{
+    font-style: normal;
+    font-size: .9em;
+    padding: 10px;
+}
+
+
+footer {
   background-color:lightblue;
-  padding: 5px 0;
-  display: flex;
-  align-items:center;
-  justify-content:center;
-  
-  }
-  
-  header img {
-  width max;
-  margin: 0;
-  height: auto;
-  border-radius: 5px;
-  }
-  
-  .headings {
-  display: flex;
-  flex-direction: column;
-  }
-  
-  .headings h1 {
-  font-size: 1.6rem;
-  margin: 0 0 17px;
-  
-  }
-  
-  
-  footer {
-    background-color:lightblue;
-    max-width: 1100px;
-    margin: 0 auto;
-    text-align: center;
-  }
-  
-  .location {
-    border: none;
-  }
-  
-  main {
-    display: grid;
-    grid-column-gap: 25px;
-    grid-template-rows: auto;
-    box-sizing: border-box;
-    background-color:rgba(0, 0, 255, 0.123);
-    max-width: 900px;
-    margin: 0 auto ;
-    padding: 25px;
-  }
-  
-  table, th, td {
-      border: 1px solid blue;
-  }
-  .motto {
-  font-style: italic;
-  letter-spacing: 1pt;
-  color:rgb(255, 255, 255);
-  margin-left: 60px;
-  font-size: 1.3rem;
-  }
-  
-  nav {
+  max-width: 1100px;
+  padding: 10pt;
+  color: white;
   margin: 0 auto;
-  max-width: 760px;
-  background-color:lightseagreen;
-  }
-  
-  .navigation {
-  list-style: none;
   text-align: center;
-  padding: 0;
-  }
+}
+
+
+footer p{
+    margin:5px;
+}
+
+
+
+
+
+
+
+h1 {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  margin: 0;
+}
+
+h2 {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif, cursive;
   
-  .navigation li:first-child {
-  display: block;
-  }
-  
-  .navigation li {
-  display: none;
-  }
-  
-  
-  .navigation a {
-  display: block;
-  color: #020916;
-  padding: 0.75rem;
+}
+
+
+header {
+background-color:lightblue;
+padding: 5px 0;
+display: flex;
+align-items:center;
+  justify-content:center;
+
+}
+
+
+.location {
+  border: none;
+}
+
+
+
+.motto {
+font-style: italic;
+letter-spacing: 1pt;
+color:rgb(255, 255, 255);
+margin-left: 60px;
+font-size: 1.3rem;
+}
+
+nav {
+width: 100%;
+background-color:lightseagreen;
+}
+
+.navigation {
+list-style: none;
+text-align: center;
+padding: 0;
+}
+
+.navigation li:first-child {
+display: block;
+}
+
+.navigation li {
+display: none;
+}
+
+
+.navigation a {
+display: block;
+color: #020916;
+padding: 0.75rem;
+text-align: center;
+text-decoration: none;
+}
+
+.location{
   text-align: center;
-  text-decoration: none;
-  }
-  
-  .location{
-    text-align: center;
-  }
-  
-  .navigation a:hover {
-    color: #000;
-  font-weight: 700;
-  }
-  
-  p {
-    font-family: 'ZCOOL XiaoWei', serif;
-  }
-  
-  .responsive li {
-  display: block;
-  }
-  
-    
+}
+
+.navigation a:hover {
+  color: #000;
+font-weight: 700;
+}
+
+p {
+  font-family: 'ZCOOL XiaoWei', serif;
+}
+
+.responsive li {
+display: block;
+}

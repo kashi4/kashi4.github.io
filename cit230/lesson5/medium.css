@@ -15,17 +15,20 @@
      
      .navigation {
          display: flex;
+         width: 100%;
      }
      .navigation li:first-child {
          display: none;
+         width: 100%;
      }
      .navigation li {
          display: block;
          flex: 1 1 100%;
+         
      }
      .navigation li a {
      color: #052a69;
+     width: 100%;
      
      }
  }
- 

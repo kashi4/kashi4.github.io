@@ -1,96 +1,119 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Preston Home Page</title>
+    <link rel="stylesheet " href="styles/normalize.css">
     <link rel="stylesheet " href="styles/small.css">
     <link rel="stylesheet " href="medium.css">
     <link rel="stylesheet " href="large/small.css">
     <link rel="shortcut icon" href="/path/to/favicon.ico">
 </head>
-<body>
-    <div class="backcolor">
-                <header>
-                <picture>
-                    <img src="images/weather10.jpg" alt="logo">
-                </picture>
-                    <section class="headings">
-                        <h1>The Weather Corner</h1>
-                        <p class="motto">Where Precipitations meet!</p>
-                    </section>
-                </header>
+
+<div class="backcolor">
+<body id="preston">
+    <header>
+        <img src="images/weather10.jpg" alt="logo">
+        <h1>The Weather Corner</h1>
+        <section class="headings">
+            <p class="motto">Where Precipitations meet!</p>
+        </section>
+    </header>
         <nav>
             <ul class="navigation">
-                        <li><a href="#" onclick="toggleMenu()">&#9776; Menu</a></li>
-                        <li><a href="#"> Home</a></li>
-                        <li class="active"><a href="#">Preston</a></li>
-                        <li><a href="#"> Soda Springs</a></li>
-                        <li><a href="#"> Fish Haven</a></li>
-                        <li><a href="#"> Storm Center</a></li>
-                        <li><a href="#"> Gallery</a></li>
+                <li><a href="#" onclick="toggleMenu()">&#9776; Menu</a></li>
+                <li><a href="#"> Home</a></li>
+                <li class="active"><a href="#">Preston</a></li>
+                <li><a href="#"> Soda Springs</a></li>
+                <li><a href="#"> Fish Haven</a></li>
+                <li><a href="#"> Storm Center</a></li>
+                <li><a href="#"> Gallery</a></li>
             </ul>
         </nav>
+    
     </div>
-<main>
-        <h2 class="location">Preston Idaho</h2>
-         <div class="herodiv">
-                <img id="background"src="images/hero12.JPG">
-                    
+    <main>
+        <div id="heroimg">
+        <h1>Preston Idaho</h1></div>
+        <div id="heroimg">
+            <div class="hero-ph"></div>
+           
             <section class="weathersummary">
-                <h3>Weather Summary</h3>
-                <p>Currently: <span id="current">sunny</span</p>
-                <p>Tempreture: <span id="temp">78 deg></span></p>
-                <p>Humidity: <span id="humidity">Yes</span></p>
-                <p>Precipitations: <span id="weather">0 inches</span></p>
-                <p>Wind speed: <span id="speed">5 mph</span></p>
+                                               
+                    <h2>Weather Summary</h2>
+                    <p><b>Currently:</b>Sunny</p>
+                    <p><b>Tempreture</b>78&deg;F</p>
+                    <p><b>Humidity</b>Yes</p>
+                    <p><b>Precipitations</b>0 inches</p>
+                    <p><b>Wind speed</b>5 mph</p>
+                    
             </section>
+            
         </div>
-            <!-- Add Hero Image here-->
-        <section class="content1"> 
-            <h2 class="">The Weather Corner</h2>
-            <p></p>
-        </section>
-        <section class="content2">
-            <h2 class="">5 Day Forecast</h2>
-            <!-- Add Hero Image here-->
-            <h3>High Tempreture Forcast</h3>
-            <table>
-                <tr>
-                    <th>Day</th>
-                    <th id="day1">Day 1</th>
-                    <th id="day2">Day 2</th>
-                    <th id="day3">Day 3</th>
-                    <th id="day4">Day 4</th>
-                    <th id="day5">Day 5</th>
-                </tr>
-                <tr>
-                    <td>Forcast</td>
-                    <td id="temp1">60&deg;</td>
-                    <td id="temp2">65&deg;</td>
-                    <td id="temp3">52&deg;</td>
-                    <td id="temp4">48&deg;</td>
-                    <td id="temp5">40&deg;</td>
-                </tr>
-            </table>
-        </section>
-        <section class="content3">
-            <h2 class="">Article</h2>
-        </section>
-        <section class="content4">
-            <h2 class="">Contact Information</h2>
-        </section>
-</main>       
-<footer>
-    <div>
-        &copy; <span id="currentDate"></span> &star; The Weather Corner &star; Julius Kashihakumwa &star; <a href="http://www.byui.edu" target="_blank">BYU-Idaho</a>
-    </div>
-    <div id="map">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d757331.1316031588!2d-112.43764277490476!3d42.14333734059391!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8754f78c7cda6c31%3A0xf1b3b4fc465a4a3f!2sPreston%2C%20ID%2083263!5e0!3m2!1sen!2sus!4v1571241140688!5m2!1sen!2sus" 
-            width="200" height="100" frameborder="0" style="border:0;" allowfullscreen=""></iframe>   
-    </div> 
+        <div class="section-container">
+            <section>
+                <h2>High Tempreture Forecast</h2>
+                <table>
+                    <tr>
+                        <th>Day</th>
+                        <th id="day1">Day 1</th>
+                        <th id="day2">Day 2</th>
+                        <th id="day3">Day 3</th>
+                        <th id="day4">Day 4</th>
+                        <th id="day5">Day 5</th>
+                    </tr>
+                    <tr>
+                        <td>Forcast</td>
+                        <td id="temp1">60&deg;</td>
+                        <td id="temp2">65&deg;</td>
+                        <td id="temp3">52&deg;</td>
+                        <td id="temp4">48&deg;</td>
+                        <td id="temp5">40&deg;</td>
+                    </tr>
+                </table>
+            </section>
+            <section id="Article">
+                <h2>Article: Some Artice </h2>
+                <article>
+                    <span class="artice-date">October 28, 2019 at 12:00pm</span>
+                    <div>
+                        
+                        <p>Geology 111 Field trip fall semester will be taking place
+                            This coming weekend. We wil be travelling to South Utah to explore the different
+                            geological features. Please make sure to study the weather conditions
+                            for the coming weekend. </p>
+                    </div>
+                </article>
+            </section>
+            <section id="contact">
+                <h2>Contact Us</h2>
+                <article>
+                    <div>
+                        <h3>
+                            The Weather Corner
+                        </h3>
+                        <address>
+                            <b>address</b> 111 W 7 S, Rexburg, ID 83440</br>
+                            <b>email:</b><a href="twc_4@gmail.com"></a><br>
+                            <b>phone number:</b><a href="tel:+12086007159">(208) 600-7159</a>
+                        </address>
+                        <img src="images/hero12.JPG" style="width: 150px;">
+                    </div>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d757331.1316031588!2d-112.43764277490476!3d42.14333734059391!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8754f78c7cda6c31%3A0xf1b3b4fc465a4a3f!2sPreston%2C%20ID%2083263!5e0!3m2!1sen!2sus!4v1571241140688!5m2!1sen!2sus"
+                        width="200" height="100" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+            </section>
+    </main>
+    <footer>
+        <div>
+            &copy; <span id="currentDate"></span> &star; The Weather Corner &star; Julius Kashihakumwa &star; <a
+                href="http://www.byui.edu" target="_blank">BYU-Idaho</a>
+        </div>
     </footer>
     <script src="scripts/main.js"></script>
 </body>
+
 </html>
