@@ -9,6 +9,7 @@ var daysOfWeek = [
     'Thursday','Friday','Saturday',
 
 ];
+currentDateString = weekDay + ' ,';
 
 var weekDay = daysOfWeek[weekDayNumber];
 currentDateString = weekDay + ', ';
@@ -32,17 +33,18 @@ let currentDay = weekDayNumber;
 for (let i =1; i < 6; i++) {
     // add one day to current day
     currentDay++;
-}
+
 
 // if current day is greater than 6 (Saturday), reset it to zero
 
 if (currentDay > 6) {
     currentDay = 0;
 }
-
+const element = document.getElementById(`day${i}`);
+element.innerHTML = daysOfWeek[currentDay];
+}
 //assign value to placeholder in HTML
 
-const element = document.getElementById('day${i}');
-element.innerHTML = daysOfWeek[currentDay];
+
 
 
