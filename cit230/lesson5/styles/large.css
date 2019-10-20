@@ -61,5 +61,10 @@
         letter-spacing: 3pt !important;
         color: black !important;
         }
+
+        #contact iframe{
+            display: block;
+            float: right;
+        }
  
  }

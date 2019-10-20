@@ -10,6 +10,8 @@ body{
     background-size: cover;
     background-position: center bottom;
     background-attachment: fixed;
+    background-repeat: no-repeat;
+  background-size: 100% 100%;
 
 }
 
@@ -51,6 +53,8 @@ header img{
 }
 
 
+
+
 #heroimg{
 /* The image used */
     background-position: center;
@@ -58,8 +62,12 @@ header img{
     background-size: 50%;
     position: relative;
     margin-bottom: 30px;
-
+    border: 2px solid black;
+    border-radius: 5px;
+    
 }
+
+
 
 #heroimg h1{
     font-size: 3.6em;
@@ -80,12 +88,16 @@ header img{
     width: 200px;
 }
 
+#contact iframe{
+  display: block;
+}
 #heroimg h2{
     text-transform: uppercase;
     font-size: .9em;
     margin-top: 0px;
     border-bottom: black 1px solid;
 }
+
 
 .forecast5{
     display: none;
@@ -109,6 +121,7 @@ header img{
     border-left: .5em solid rgb(0, 157, 230);
 
 }
+
 
 .section-container td, .section-container th{
     text-align: left;
@@ -139,6 +152,13 @@ header img{
     width: 100%;
 }
 
+#pancake{
+  text-align: center;
+  color: skyblue;
+  font-size: 25px;
+  font-style: italic;
+  text-transform: lowercase;
+}
 
 #contact iframe{
     display: none;
@@ -153,13 +173,124 @@ header img{
     font-size: .9em;
     padding: 10px;
 }
+/* social media icons */
 
+.icon-button {
+	background-color: white;
+	border-radius: 2.6rem;
+	cursor: pointer;
+	display: inline-block;
+	font-size: 1.3rem;
+	height: 2.6rem;
+	line-height: 2.6rem;
+	margin: 0 5px;
+	position: relative;
+	text-align: center;
+	-webkit-user-select: none;
+	   -moz-user-select: none;
+	    -ms-user-select: none;
+	        user-select: none;
+	width: 2.6rem;
+}
+
+/* Circle */
+.icon-button span {
+	border-radius: 0;
+	display: block;
+	height: 0;
+	left: 50%;
+	margin: 0;
+	position: absolute;
+	top: 50%;
+	-webkit-transition: all 0.3s;
+	   -moz-transition: all 0.3s;
+	     -o-transition: all 0.3s;
+	        transition: all 0.3s;
+	width: 0;
+}
+.icon-button:hover span {
+	width: 2.6rem;
+	height: 2.6rem;
+	border-radius: 2.6rem;
+	margin: -1.3rem;
+}
+
+/* Icons */
+.icon-button i {
+	background: none;
+	color: white;
+	height: 2.6rem;
+	left: 0;
+	line-height: 2.6rem;
+	position: absolute;
+	top: 0;
+	-webkit-transition: all 0.3s;
+	   -moz-transition: all 0.3s;
+	     -o-transition: all 0.3s;
+	        transition: all 0.3s;
+	width: 2.6rem;
+	z-index: 10;
+}
+
+.twitter span {
+	background-color: #4099ff;
+}
+.facebook span {
+	background-color: #3B5998;
+}
+.google-plus span {
+	background-color: #db5a3c;
+}
+.tumblr span {
+	background-color: #34526f;
+}
+.instagram span {
+	background-color: #517fa4;
+}
+.youtube span {
+	background-color: #bb0000;
+}
+.pinterest span {
+	background-color: #cb2027;
+}
+
+.icon-button .icon-twitter {
+	color: #4099ff;
+}
+.icon-button .icon-facebook {
+	color: #3B5998;
+}
+.icon-button .fa-tumblr {
+	color: #34526f;
+}
+.icon-button .icon-google-plus {
+	color: #db5a3c;
+}
+.icon-button .fa-instagram {
+	color: #517fa4;
+}
+.icon-button .fa-youtube {
+	color: #bb0000;
+}
+.icon-button .fa-pinterest {
+	color: #cb2027;
+}
+
+.icon-button:hover .icon-twitter,
+.icon-button:hover .icon-facebook,
+.icon-button:hover .icon-google-plus,
+.icon-button:hover .fa-tumblr,
+.icon-button:hover .fa-instagram,
+.icon-button:hover .fa-youtube,
+.icon-button:hover .fa-pinterest {
+	color: white;
+}
 
 footer {
   background-color:lightblue;
   max-width: 1100px;
   padding: 10pt;
-  color: white;
+  color: black;
   margin: 0 auto;
   text-align: center;
 }
@@ -170,9 +301,22 @@ footer p{
 }
 
 
+footer{
+  background-color: #353535;
+  margin:0px;
+  padding: 10pt;
+  color: white;
+  text-align: center;
+}
+
+footer p{
+  margin:5px;
+}
+
 h1 {
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   margin: 0;
+  text-align: center;
 }
 
 h2 {
@@ -249,3 +393,4 @@ p {
 .responsive li {
 display: block;
 }
+
