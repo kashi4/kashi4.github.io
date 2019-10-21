@@ -1,0 +1,7 @@
+@media screen and(min-width:600px){
+    main{
+        color: springgreen;
+        font-size: 10px;
+        background: grey;
+    }
+}

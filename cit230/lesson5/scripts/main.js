@@ -45,6 +45,8 @@ element.innerHTML = daysOfWeek[currentDay];
 }
 //assign value to placeholder in HTML
 
-
+if (weekDayNumber === 5){
+    document.getElementById("pancake").removeAttribute("class","hidden");
+} 
 
 
