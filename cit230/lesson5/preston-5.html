@@ -10,8 +10,8 @@
     <title>Preston Home Page</title>
     <link rel="stylesheet " href="styles/normalize.css">
     <link rel="stylesheet " href="styles/small.css">
-    <link rel="stylesheet " href="medium.css">
-    <link rel="stylesheet " href="large/small.css">
+    <link rel="stylesheet " href="styles/medium.css">
+    <link rel="stylesheet " href="styles/large.css">
     <link rel="shortcut icon" href="/path/to/favicon.ico">
 </head>
 
@@ -29,7 +29,7 @@
             <ul class="navigation">
                 <li><a href="#" onclick="toggleMenu()">&#9776; Menu</a></li>
                 <li><a href="#"> Home</a></li>
-                <li class="active"><a href="#">Preston</a></li>
+                <li class="active"><a href="preston-4.html">Preston</a></li>
                 <li><a href="#"> Soda Springs</a></li>
                 <li><a href="#"> Fish Haven</a></li>
                 <li><a href="#"> Storm Center</a></li>
@@ -37,31 +37,27 @@
             </ul>
         </nav>
     
-    </div>
-    <main>
+     <main>
+       
+        <h2>Preston Idaho</h2>
         <section id="pancake" class="hidden">
             <p>Saturday = Preston Pancakes in the Park!  9:00 a.m. Saturday at the city park pavilion.</p>
         </section>
-        <div id="heroimg">
-        <h1>Preston Idaho</h1></div>
-        <div id="heroimg">
-            <div class="hero-ph"></div>
-           
-            <section class="weathersummary">
-                                               
-                    <h2>Weather Summary</h2>
-                    <p><b>Currently       </b>    :Sunny</p>
-                    <p><b>Tempreture      </b>    :78&deg;F</p>
-                    <p><b>Humidity        </b>    :Yes</p>
-                    <p><b>Precipitations</b>    :0 inches</p>
-                    <p><b>Wind speed    </b>    :5 mph</p>
-                    
+        <section id="heroimg">
+        	<img src="images/hero12.JPG" alt="Image of Preston,Idaho" id="heroimag"style="width: 800px;">
+      		  <div id=weather summary>
+               	  <h3>Weather Summary</h3>
+                   <p>Currently:Sunny</p>
+                   <p>Tempreture:78&deg;F</p>
+                   <p>Humidity:80%</p>
+                   <p>Precipitations:0 inches</p>
+                   <p>Wind speed:5 mph</p>
+                  </div>
             </section>
             
-        </div>
-        <div class="section-container">
             <section>
-                <h2>High Tempreture Forecast</h2>
+            <section id="Five Day forcast">
+            <h3>High Tempreture Forecast</h3>
                 <table>
                     <tr>
                         <th>Day</th>
@@ -81,17 +77,16 @@
                     </tr>
                 </table>
             </section>
-            <section id="Article">
-                <h2>Article: Some Artice </h2>
+            <h2>Article: Weather Article</h2>
+            <h3>By:Kashihakumwa 
                 <article>
+                    <img src="images/hero1.JPG" alt="Geology 111 Field Trip 2019" id="people">
                     <span class="artice-date">October 28, 2019 at 12:00pm</span>
-                    <div>
-                        
-                        <p>Geology 111 Field trip fall semester will be taking place
+                            <p>Geology 111 Field trip fall semester will be taking place
                             This coming weekend. We wil be travelling to South Utah to explore the different
                             geological features. Please make sure to study the weather conditions
                             for the coming weekend. </p>
-                    </div>
+                   
                 </article>
             </section>
             <section id="contact">
