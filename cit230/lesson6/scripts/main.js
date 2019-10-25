@@ -9,6 +9,7 @@ var daysOfWeek = [
     'Thursday','Friday','Saturday',
 
 ];
+currentDateString = weekDay + ' ,';
 
 var weekDay = daysOfWeek[weekDayNumber];
 currentDateString = weekDay + ', ';
@@ -26,7 +27,9 @@ currentDateString += ' ' + currentDate.getFullYear();
 document.getElementById('currentDate').innerHTML = currentDateString;
 //debugging
 
-et currentDay = weekDayNumber;
+// create 5 day forcats
+
+let currentDay = weekDayNumber;
 for (let i =1; i < 6; i++) {
     // add one day to current day
     currentDay++;
@@ -45,5 +48,4 @@ element.innerHTML = daysOfWeek[currentDay];
 if (weekDayNumber === 5){
     document.getElementById("pancake").removeAttribute("class","hidden");
 } 
-
 

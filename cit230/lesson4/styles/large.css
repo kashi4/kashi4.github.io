@@ -1,8 +1,90 @@
-@media only screen and (min-width: 60em) {
-    header img {
-        width: 150px;
+@media only screen and(min-width: 60em){
+    article img{
+        margin-left: 15px;
+    }
+    
+    .headings h1{
+        font-size: 3.5rem;
     }
 
+    #logo{
+        width: 160px;
+    }
 
+    .navigation a{
+        font-size: 1.15rem;
+    }
+
+    main h2{
+        font-size: 2rem;
+    }
+
+    #contact iframe{
+        display: block;
+        float: right;
+    }
 
 }
+/* BIG DESKTOP VIEW */
+
+/*@media only screen and (min-width: 67em){
+    header{
+        border-bottom: none;
+        display: grid;
+        grid-template-columns: 1fr 4fr;
+        background-color: #353535;
+        
+    }
+
+    .navigation{
+        text-align: right;
+        margin-right: 1.2em;
+    }
+
+    header img{
+        height: 65px;
+        width: auto;
+        margin-left: 1em;
+    }
+
+    header .black-logo{
+        display: none;
+    }
+
+    header .white-logo{
+        display: inherit;
+    }
+
+    header nav{
+        margin-top: 1.5em;
+        margin-left: 1.5em;
+        
+    }
+
+    header li{
+        display: inline !important;
+    }
+
+    header li:first-child{
+        display: none !important;
+    }
+
+    header nav a{
+        display: inline;
+        border-top: none;
+        font-size: .8em;
+        font-weight: 400;
+    }
+
+    nav a:hover{
+        background-color:white !important;
+        letter-spacing: 3pt !important;
+        color: black !important;
+        }
+
+        #contact iframe{
+            display: block;
+            float: right;
+        }
+ 
+ }*/

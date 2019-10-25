@@ -1,299 +1,250 @@
-@import url('https://fonts.googleapis.com/css?family=Josefin+Sans|Raleway&display=swap');
 
-a{
-    text-decoration: none;
-    font-family: 'Raleway', sans-serif;
+/*Media Query for Small*/
+* {
+  margin: 0px;
+  padding: 0px;
 }
-
-a::before{
-    position: absolute;
-    top: 22px;
-    left: 50%;
-    width: 50px;
-    height: 50px;
-    border: 4px solid lightgreen;
-    transform: translateX(-50%) translateY(-50%) scale(.5);
-    border-radius: 5%;
-    background: transparent;
-    content: "";
-    opacity: 0;
-    transition: all .3s;
-    z-index: -1;
-}
-
-nav a:hover::before{
-    opacity: 1;
-    width: 200%;
-    background-color: silver;
-    color: black;
-}
-
-article{
-    max-width: 50%;
-    margin-left: auto;
-    margin-right: auto;
-    background: rgba(78, 205, 196, 0.2);
-    padding: 15px 25px;
-}
-
-article h3{
-    text-align: center;
-}
-
-article h4{
-    margin-top: -7px;
-    text-align: center;
-}
-
-#contact{
-    background-color: rgba(204, 204, 204, .3);
-	padding: 25px;
-	text-align: center;
-}
-
-#fiveDay{
-    display: none;
-}
-
-footer{
-    background-color: skyblue;
-    padding: 3px 0px;
-}
-
-footer p{
-    text-align: center;
-}
-
-#group{
-    max-width: 235px;
-}
-
-h1, h2, h3, h4, h5, h6{
-    font-family: 'Josefin Sans', sans-serif;
-    color: #98dfea;
-}
-
-header{
-    padding: 5px 0px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #4ecdc4;
-}
-
-.headings{
-    display: flex;
-    flex-direction: column;
-}
-
-.headings h1{
-    font-size: 1.6rem;
-    margin: 0px 0px 0px 17px;
-    text-align: center;
-}
-
-#hero{
-    position: relative;
-}
-
-#heroPic{
-    max-width: 100%;
-}
-
 .hidden{
-    display: none;
+  display:none;
+}
+nav {
+  margin: 0 auto;
+
+  background-color: #000;
 }
 
-li{
-    list-style-type: none;
+.navigation {
+  list-style: none;
+  text-align: center;
+  padding: 0;
 }
 
-#logo{
-    width: 80px;
+.navigation li:first-child {
+  display: block;
 }
 
-main h2{
-    text-align: center;
+.navigation li {
+  display: column;
+  margin-right: -4px;
+  border-bottom: 1px solid lightgray;
 }
 
-main section{
-    margin: 10px;
-    padding-left: 10px;
+a {
+  display: block;
+  text-decoration: none;
+  padding: 0.75em;
+  color: #fff;
+  transition: 0.8s background-color;
 }
 
-#map{
-    display: none;
+ul {
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+  text-align: center;
+  background-color: #a4cfe3;
 }
 
-.motto{
-    font-style: italic;
-    letter-spacing: 1pt;
-    margin-left: 20px;
-    font-size: .9rem;
-    text-align: center;
+.responsive li {
+  display: none;
+  transition: 0.9s
 }
 
-nav{
-    margin: 0 auto;
+a:hover {
+  background-color: #88a3ae;
+
 }
 
-.navigation{
-    width: 100%;
-    margin: 0 0 1em 0;
-    text-align: center;
-    padding: 0;
-    background-color: olivedrab;
+.webname {
+  display: flex;
+  font-size: 2em;
+  justify-content: center;
+  padding: 5px;
+  background-color: #79cef5;
+
 }
 
-.navigation a{
-    display: block;
-    padding: 0.75rem;
-    text-align: center;
-    position: relative;
-    z-index: 0;
-    cursor: pointer;
-    color: white;
+
+body {
+  background-color: #79cef5;
+  padding: 0;
+  margin: 0 auto;
+  text-align: center;
+  justify-content: center;
 }
 
-.navigation li:first-child{
-    display: block;
+#map {
+  display: none;
 }
 
-.navigation li{
-    display: none;
+/* .heroimg {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/CIT230/lesson5/images/mountain.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  height: 50%;
+} */
+
+
+
+
+/*Image Settings*/
+header {
+  background-color: skyblue;
+  padding: 0.3125em 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-p, th, td{
-    font-family: 'Raleway', sans-serif;
+header img {
+  width: 7.5em;
+  height: auto;
 }
 
-.responsive li{
-    display: block;
+.headings {
+  display: flex;
+  flex-direction: column;
 }
 
-td, th{
-    border: 1px solid black;
-    text-align: center;
+.headings h1 {
+  font-size: 3rem;
+  margin: 0;
+  font-family: 'Anton', sans-serif;
 }
 
-#weatherSummary{
-    position: absolute;
-    bottom: 20px;
-    left: 20px;
-    background: rgba(78, 205, 196, 0.8);
-    color: blueviolet;
-    padding-left: 20px;
-    padding-right: 20px;
+.m {
+  font-style: italic;
+  letter-spacing: 1pt;
+  color: forestgreen;
+  margin-left: 1.25em;
+  font-size: .9rem;
 }
 
-/* Wrapper */
-.icon-button {
-	background-color: white;
-	border-radius: 2.6rem;
-	cursor: pointer;
-	display: inline-block;
-	font-size: 1.3rem;
-	height: 2.6rem;
-	line-height: 2.6rem;
-	margin: 0 5px;
-	position: relative;
-	text-align: center;
-	-webkit-user-select: none;
-	   -moz-user-select: none;
-	    -ms-user-select: none;
-	        user-select: none;
-	width: 2.6rem;
+
+
+/*Format at the main*/
+main {
+  text-align: center;
+ 
+
 }
 
-/* Circle */
-.icon-button span {
-	border-radius: 0;
-	display: block;
-	height: 0;
-	left: 50%;
-	margin: 0;
-	position: absolute;
-	top: 50%;
-	-webkit-transition: all 0.3s;
-	   -moz-transition: all 0.3s;
-	     -o-transition: all 0.3s;
-	        transition: all 0.3s;
-	width: 0;
-}
-.icon-button:hover span {
-	width: 2.6rem;
-	height: 2.6rem;
-	border-radius: 2.6rem;
-	margin: -1.3rem;
+section {
+  font-family: 'Rubik', sans-serif;
+  font-size: 1.5em;
 }
 
-/* Icons */
-.icon-button i {
-	background: none;
-	color: white;
-	height: 2.6rem;
-	left: 0;
-	line-height: 2.6rem;
-	position: absolute;
-	top: 0;
-	-webkit-transition: all 0.3s;
-	   -moz-transition: all 0.3s;
-	     -o-transition: all 0.3s;
-	        transition: all 0.3s;
-	width: 2.6rem;
-	z-index: 10;
+footer {
+  display: flex;
+  justify-content: center;
+  background-color: white;
+  font-family: 'Rubik', sans-serif;
+
 }
 
-.twitter span {
-	background-color: #4099ff;
-}
-.facebook span {
-	background-color: #3B5998;
-}
-.google-plus span {
-	background-color: #db5a3c;
-}
-.tumblr span {
-	background-color: #34526f;
-}
-.instagram span {
-	background-color: #517fa4;
-}
-.youtube span {
-	background-color: #bb0000;
-}
-.pinterest span {
-	background-color: #cb2027;
+.townname {
+  background-color: 79cef5;
+  justify-items: auto;
+  padding: 0;
+  margin: 1em;
+  font-size: 2.5em;
+  font-family: 'Anton', sans-serif;
+
 }
 
-.icon-button .icon-twitter {
-	color: #4099ff;
-}
-.icon-button .icon-facebook {
-	color: #3B5998;
-}
-.icon-button .fa-tumblr {
-	color: #34526f;
-}
-.icon-button .icon-google-plus {
-	color: #db5a3c;
-}
-.icon-button .fa-instagram {
-	color: #517fa4;
-}
-.icon-button .fa-youtube {
-	color: #bb0000;
-}
-.icon-button .fa-pinterest {
-	color: #cb2027;
+
+/*Section 1*/
+.weathsum {
+  padding: 1em;
 }
 
-.icon-button:hover .icon-twitter,
-.icon-button:hover .icon-facebook,
-.icon-button:hover .icon-google-plus,
-.icon-button:hover .fa-tumblr,
-.icon-button:hover .fa-instagram,
-.icon-button:hover .fa-youtube,
-.icon-button:hover .fa-pinterest {
-	color: white;
+.weathsum img {
+  vertical-align: middle;
+  max-width: 100%;
+  box-shadow: 4px 4px 8px 4px rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  
+}
+.weathsum .content {
+  position: absolute;
+  bottom: 20%;
+  background: rgb(0, 0, 0); /* Fallback color */
+  background: rgba(0, 0, 0, 0.6); /* Black background with 0.5 opacity */
+  color: grey;
+  width: 100%;
+  padding:5px;
+  max-width: 250px;
+  font-family: 'Rubik', sans-serif;
+  font-size: 15px;
+
+}
+.weathsum h1{
+  text-decoration: underline;
+}
+#pancake{
+  padding: 5px;
+  border:  .5px solid;
+  background: linear-gradient(to right, rgba(255,175,75,1) 0%, rgba(239,255,8,1) 100%); 
+}
+#pancake p{
+  justify-content: center;
+}
+
+#forecast {
+  display: none;
+  font-size: small;
+  
+}
+
+
+
+
+/*Section 2*/
+.article {
+  background-color: silver;
+  border: dotted;
+  padding: 3.125em;
+  margin: .5em 1.25em 0.625em;
+  border: solid;
+  font-size: 1em;
+  text-align: left;
+}
+.article #headline{
+  font-size: 1em;
+  color: red;
+}
+.article p{
+  font-size: .25em
+}
+.article img{
+  display: none;
+}
+
+/*Section 3*/
+.contactinfo {
+  background-color: white;
+  border: solid;
+  font-size: 1em;
+  margin: .5em 1.25em 0.625em;
+}
+
+#map {
+  display: flex;
+  justify-content: center;
+}
+.social{
+  display: block;
+  flex-direction: row;
+}
+.social img{
+  width: 5%;
+  justify-content: center;
+  margin: 0 10px;
+}
+
+#coinfo {
+  display: flex;
+  justify-content: center;
+  font-size: 1.5em;
 }

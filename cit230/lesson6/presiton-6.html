@@ -8,22 +8,31 @@
     <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
     <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/3.1.1/css/font-awesome.css">
     <title>Preston Home Page</title>
+    <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet " href="styles/small.css">
     <link rel="stylesheet " href="styles/medium.css">
     <link rel="stylesheet " href="styles/large.css">
-    <link rel="shortcut icon" href="/path/to/favicon.ico">
+     <link rel="shortcut icon" href="/path/to/favicon.ico">
 </head>
 
 <div class="backcolor">
 <body> 
     <header>
+            <h1>The Weather Site</h1>
+            <section id="WeatherSummary">
+                <div id="currentTemp"></div>
+                <div id="windSpeed"></div>
+                <div id="windChill"></div>
+        
+            </section>
         <img src="/cit230/lesson4/images/weather10.jpg" alt="logo" id="preston">
         <section class="headings">
         <h1>The Weather Corner</h1>
         <p class="motto">Where Precipitations meet!</p>
-       
+               
     </section>
     </header>
+    
         <nav>
             <ul class="navigation">
                 <li><a href="#" onclick="toggleMenu()">&#9776; Menu</a></li>
@@ -120,6 +129,7 @@
         </div>
     </footer>
     <script src="scripts/main.js"></script>
+    <script src="scripts/windhill.js"></script>
 </body>
 
 </html>
