@@ -1,6 +1,6 @@
 /* html selectors */
 body {
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+    font-family: 'Indie Flower', cursive;
 }
 
 h3 {
@@ -19,7 +19,7 @@ nav li {
 }
 
 nav li a {
-    color: white;
+    color: blue;
     display: inline-block;
     text-decoration: none;
     width: 100%;
@@ -36,10 +36,12 @@ nav ul {
 
 /* class selectors */
 .active {
-    background-color: lightblue;
+    background-color: silver;
 }
 
 .center {
     text-align: center;
 }
+
+
 
