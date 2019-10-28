@@ -19,11 +19,13 @@ nav li {
 }
 
 nav li a {
-    color: blue;
     display: inline-block;
     text-decoration: none;
     width: 100%;
+    background-color:lightslategray;
+    opacity: 1;
 }
+
 
 nav ul {
     
@@ -36,12 +38,13 @@ nav ul {
 
 /* class selectors */
 .active {
-    background-color: silver;
+    background-color: blue;
 }
 
 .center {
     text-align: center;
 }
 
-
-
+.main{
+    background-color: grey;
+}
