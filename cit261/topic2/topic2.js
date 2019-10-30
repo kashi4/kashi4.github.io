@@ -15,7 +15,7 @@ Example 2: localStorage (0bject)
 */
 /* Encapsulation, Abstraction,Inheritance, Polymorphism */
 
-let firstName = 'Julius';
+/*let firstName = 'Julius';
 let lastName = 'Kashihakumwa';
 let age = 30;
 let isMale = true;
@@ -28,13 +28,7 @@ console.log(person.firstName,person.isMale);
 // Encapsulation: Grouping related variables & functions that operate on them as objects
 //procedural example:
 
-let annualIncome = 60_000;
-let bonuses = 1050;
-let rate = 0.15;
 
-function getWage(annualIncome,bonuses,rate){
-    return annualIncome + (bonuses * rate);
-}
 
 let employee = {
     annualIncome:60_000,
@@ -48,4 +42,33 @@ employee.getWage();
 
 // ABSTRACTIONS: many things are hidden from you , you only need to know what you need to know
 //Example dvd player:
+
+function multiply(p1,p2){
+    return (p1*p2);
+}
+
+console.log(3 * 12); */
+
+/* ############################
+console.log('Hello guys');
+console.log(3 * 25);
+#################################################
+console.log('Julius Kashihakumwa is 39 years old');
+
+console.log('Theopolina Kashihakumwa is 35 years old'); */
+
+// function to tell us their name and age
+function person(name, age){
+    console.log(name + " " + 'is'+ " " + age + " " + 'years old.' );
+}
+
+let juliusK = 'Julius Kashihakumwa';
+let juliusAge = 39;
+
+person('Julius Kashihakumwa',39);
+person('Theopolina Kashihakumwa',35);
+
+
+
+
 

@@ -1,155 +1,180 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap');
+
+main{
+  max-width: 400px;
+  margin: 0 auto;
+}
 
 header {
-
-  background-color: lightblue;
-  padding: 10px;
-  line-height: 0;
-  border-radius: 10px;
-  text-align: block;
-  color: black;
-  font-family: 'Oxygen', sans-serif;
-}
-
-
-header img{
-  display:flex ;
+  background-color: skyblue;
+  display: flex;
   align-items: center;
   justify-content: center;
-  padding: 5px;
-  width: 80px;
-  display: block;
-  font-family: 'Oxygen', sans-serif;
 }
 
-footer {
-  background-color: lightblue;
-  height: auto;
-  width: auto;
-  font-family: 'Oxygen', sans-serif;
+header img {
+  width: 60px;
+  padding-right: 10px;
+}
 
+article img {
+  width: 100%;
+}
+
+
+h1, h2, h3 {
+  font-family: 'Ubuntu', sans-serif;
+}
+
+p {
+  font-family: 'Josefin Sans', sans-serif;
 }
 
 article {
+  border: 3px lightslategray;
+  border-radius: 10px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  background-color: #a6e1fa;
+}
+
+article p {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+h1 {
+  font-size: 40px;
+  color:black solid;
+  padding-left: 10px;
+}
+
+h2 {
+  font-size: 22px;
   text-align: center;
-  font-family: 'Oxygen', sans-serif;
- 
 }
 
-body {
-  display: block;
-  background-color: grey;
-  font-family: 'Indie Flower', cursive;
+h3 {
+  text-align: center;
+  color: #00798c;
 }
 
-.stats {
-  position: absolute;
-  top:1rem;
-  top: 25px;
-  left: 50px;
-	background: radial-gradient(blue,skyblue);
-	border: 1px solid #000;
-	padding: 1.5rem;
-	box-shadow: 0 0 30px #111;
-  opacity: .8;
-  font-family: 'Oxygen', sans-serif;
-}
-
-table,
-th,
-td {
-  border: 1px solid skyblue;
-  height: auto;
-  width: auto;
-  grid-column: 1/4;
-  font-family: 'Oxygen', sans-serif;
-}
+/* ------ Navigation Styles ------ */
 
 nav {
-  background-color:white;
-  font-family: 'Oxygen', sans-serif;
- }
+  background-color: lightslategrey ;
+  margin-top: -5px;
+  border-top: 3px #00798c solid;
+}
 
 .navigation {
-  list-style: none;
+  list-style: lower-roman;
   text-align: center;
   padding: 0;
+  padding-bottom: 8px;
 }
 
 .navigation li:first-child {
   display: block;
 }
 
+.navigation li {
+  display: none;
+}
 
 .navigation a {
-  display: block;
-  color: black;
-  padding: 0.75rem;
-  text-align: center;
+  color: #00798c;
   text-decoration: none;
+  font-family: Heebo;
+  font-size: 18px;
+  padding: 0.75rem;
 }
 
 .navigation a:hover {
   color: black;
-  font-weight: 500;
+  text-decoration: underline;
+  transition-duration: 1s;
 }
 
+table, td, th {
+  border: 1px solid black;
+}
 
+#forecast {
+  display: none; 
+}
+
+#frame {
+  display: none;
+}
+
+.hidden {
+  display: none;
+}
+
+/* ----- Weather Summary Styles ------ */
+
+.hero-div {
+  margin: 0 auto;
+}
+
+/* ----- Footer styles ----- */
+
+footer {
+  background-color:skyblue;
+  padding: 10px 0 10px 0;
+}
+
+footer span, footer p {
+  color: silver;
+  text-align: center;
+  font-family: Heebo;
+}
+
+.copyright {
+  max-width: 800px;
+  margin: 20px 0px;
+  margin: 0 auto;
+  border-top: silver solid 2px;
+  padding: 20px 0px;
+}
+
+footer p {
+  margin: 5px 0px;
+}
+
+/* ----- onclick JS toggle class style ----- */
 .responsive li {
   display: block;
 }
 
-.active {
-  background: radial-gradient(blue, lightblue);
-  font-weight: 500;
-}
-
-iframe {
-  display: none;
- 
-}
-
-
-.herodiv {
-  position: relative;
-  width: 100%;
-  height: 100%;
-}
-
-.hero-ph {
-  width: 100%;
-  height: 100%;
-}
-
-.weathersummary {
-  display: none;
-  position: absolute;
-  top: 50px;
-  left: 50px;
-  background: radial-gradient(lightseagreen,blue);
-  border: 3px solid black;
-  padding: .5rem;
-  box-shadow: 0 0 30px
-}
-
-.hidden{
-  display: none;
-}
-
-#pancake{
-  border: 3px solid black;
-  font-size: 25px;
-  text-transform: uppercase;
-}
-
-main{
-  max-width: 400px;
-  margin: 0px auto;
-  text-align: center;
-  font-family: 'Oxygen', sans-serif;
-}
-#heroimag{
+/* ------ Hero Image Styles ----- */
+.hero-image {
   width: 400px;
+  box-shadow: 3px 3px 5px #00798c;
 }
-article{
-  font-family: 'Oxygen', sans-serif;
+
+.hero-container {
+  position: relative;
+}
+
+.weather-summary {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background-color: rgb(166, 225, 250, 0.7);
+  padding-left: 5px;
+  padding-right: 5px;
+  box-shadow: 3px 3px 5px black;
+}
+
+.weather-summary p {
+  margin: 5px 0px;
+  text-shadow: 2px 2px 6px white;
+}
+
+.weather-summary h3 {
+  margin: 10px 0px;
+  text-shadow: 2px 2px 6px white;
 }
