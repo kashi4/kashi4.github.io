@@ -1,128 +1,110 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link href="https://fonts.googleapis.com/css?family=Oxygen&display=swap" rel="stylesheet">
     <title>Preston Home Page</title>
-    <link rel="stylesheet " href="styles/small.css">
-    <link rel="stylesheet " href="styles/medium.css">
-    <link rel="stylesheet " href="styles/large.css">
     <link rel="shortcut icon" href="/path/to/favicon.ico">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/large.css">
 </head>
+<body>
+    <header>
+        <img src="images/weather10.jpg" alt="logo">
+        <h1>The Weather Corner</h1>
+    </header>
 
-<div class="backcolor">
-<body> 
-        <header>
-            <img src="/cit230/lesson4/images/weather10.jpg" alt="logo">
-            <section class="logan">
-                <h1>The Weather Corner</h1> <br>
-                <h3>Where Precipitations meet!<h3>
-            </section>
-        </header>
-        <nav>
-                <ul class="navigation">
-                    <li><a href="#" onclick="toggleMenu()">&#9776; Menu</a></li>
-                    <li><a href="#"> Home</a></li>
-                    <li class="active"><a href="preston-4.html">Preston</a></li>
-                    <li><a href="#"> Soda Springs</a></li>
-                    <li><a href="#"> Fish Haven</a></li>
-                    <li><a href="#"> Storm Center</a></li>
-                    <li><a href="#"> Gallery</a></li>
-                </ul>
-        </nav>
-        <main>
-            <h2>Preston</h2>
-            <!--Pancakes-->
-            <div id="pancake" class="hidden"><p>Preston Pancakes in the park!
-                    9:00 am Saturday at the city park pavilion</p>
-            </div>
-               
-            <div class="herodiv">
-                <img src="/cit230/lesson5/images/largeimage.jpg">
-                    <section class="stats">
-                    <h2>Weather-Summary</h2>
-                        <p>Currently:Sunny</p>
-                        <p>Tempreture:78&deg;F</p>
-                        <p>Humidity:80%</p>
-                        <p>Precipitations:0 inches</p>
-                        <p>Wind speed:5 mph</p>
-                    </section>
-                </div>
-                <section>
-                        <li class="weatherTable">
-                                <table>
-                                        <tr>
-                                             <th>Day</th>
-                                             <th id="day1">Day 1</th>
-                                             <th id="day2">Day 2</th>
-                                             <th id="day3">Day 3</th>
-                                             <th id="day4">Day 4</th>
-                                             <th id="day5">Day 5</th>
-                                         </tr>
-                                         <tr>
-                                             <td></td>Tempreture</td>
-                                             <td id="temp1">60&deg;</td>
-                                             <td id="temp2">65&deg;</td>
-                                             <td id="temp3">52&deg;</td>
-                                             <td id="temp4">48&deg;</td>
-                                             <td id="temp5">40&deg;</td>
-                                         </tr>
-                                </table>
-                        <li>
+    <nav>
+        <ul class="navigation">
+            <li><a href="#" onclick="toggleMenu()">&#9776; Menu</a></li>
+            <li><a href="#">Home</a></li>
+            <li class="active"><a href="#">Preston</a></li>
+            <li><a href="#">Soda Springs</a></li>
+            <li><a href="#">Fish Haven</a></li>
+            <li><a href="#">Storm Center</a></li>
+            <li><a href="#">Gallery</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h2>Preston, Idaho</h2>
+
+        <!-- Add hero image here -->
+
+        <div class="hero-container">
+                <img class="hero-image" src="images/cit230_image_BIG.jpg" alt="Preston Town Picture">
+                <img class="small-hero" src="images/cit230_image_SMALL.png" alt="Small Hero Image">
+                <img class="medium-hero" src="images/cit230_image_medium.jpg" alt="Medium Hero Image">
+                <section class="weather-summary">
+                    <h3>Weather: Sunny</h3>
+                    <p>Currently:Sunny</p>
+                    <p>Tempreture:78&deg;F</p>
+                    <p>Humidity:80%</p>
+                    <p>Precipitations:0 inches</p>
+                    <p>Wind speed:5 mph</p>
                 </section>
-            </main>
-    
-	   
-            
-            <h2>Article: Weather Article</h2>
-            <article>
-		<span class="article-date">October 28, 2019 @ 12:00 pm </span>
-                    <div>
-			<img src="" alt="Geology 111 Field Trip 2019" id="people">
-                        <p>Geology 111 Field trip fall semester will be taking place
-                            This coming weekend. We wil be travelling to South Utah to explore the different
-                            geological features. Please make sure to study the weather conditions
-                            for the coming weekend.</p>
-			
-		    </div>                   
-            </article>
-            </section>
-            <section id="contact">
-                <h2>Contact Us</h2>
-                <article>
-                    <div>
-                        <h3>
-                            The Weather Corner
-                        </h3>
-                        <address>
-                            <b>Address:</b> 111 W 7 S, Rexburg, ID 83440</br>
-                            <b>Email:</b><a href="twc_4@gmail.com"> twc_4@gmail.com</a><br>
-                            <b>Phone number: </b><a href="tel:+12086007159"> (208) 600-7159</a>
-                        </address>
-                        <img src="images/heroimg1.jpg" style="width: 150px;">
-                    </div>
-            <div>
-                <a href="#" class="icon-button twitter"><i class="icon-twitter"></i><span></span></a>
-                <a href="#" class="icon-button facebook"><i class="icon-facebook"></i><span></span></a>
-                <a href="#" class="icon-button google-plus"><i class="icon-google-plus"></i><span></span></a>
-                <a href="#" class="icon-button youtube"><i class="fa fa-youtube"></i><span></span></a>
-                <a href="#" class="icon-button pinterest"><i class="fa fa-pinterest"></i><span></span></a>
             </div>
-            </section>
-    </main> -->
-    <footer>
-        <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d757331.1316031588!2d-112.43764277490476!3d42.14333734059391!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8754f78c7cda6c31%3A0xf1b3b4fc465a4a3f!2sPreston%2C%20ID%2083263!5e0!3m2!1sen!2sus!4v1571241140688!5m2!1sen!2sus"
-                        width="200" height="100" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
-        <div>
-            &copy; <span id="currentDate"></span> &star; The Weather Corner &star; Julius Kashihakumwa &star; <a
-                href="http://www.byui.edu" target="_blank">BYU-Idaho</a>
-        </div>
-    </footer>
-    <script src="scripts/main.js"></script>
-</body>
 
+        <!-- Pancake Banner -->
+        <section id="pancake" class="hidden">
+            <p>
+                Saturday = Preston Pancakes in the Park!  9:00 a.m. Saturday at the city park pavilion.
+            </p>
+        </section>
+
+        <!-- Five-Day Forecast -->
+        <section id="forecast">
+        <h3>High Temperature Forecast</h3>
+        <table>
+            <tr>
+                <th>Day</th>
+                <th id="day1">Day 1</th>
+                <th id="day2">Day 2</th>
+                <th id="day3">Day 3</th>
+                <th id="day4">Day 4</th>
+                <th id="day5">Day 5</th>
+            </tr>
+            <tr>
+                <td id="blue">Forecast</td>
+                <td id="">60&deg;</td>
+                <td id="">67&deg;</td>
+                <td id="">52&deg;</td>
+                <td id="">59&deg;</td>
+                <td id="">61&deg;</td>
+            </tr>
+        </table>
+    </section>
+        <article>
+            <h2>Article Title</h2>
+            <h3>By JK</h3>
+            <p>Geology 111 Field trip fall semester will be taking place
+                This coming weekend. We wil be travelling to South Utah to explore the different
+                geological features. Please make sure to study the weather conditions
+                for the coming weekend</p>
+            <img src="images/heroimage3.jpg" alt="Geology field trip image">
+        </article>
+
+        <div id="frame">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d757331.1316031588!2d-112.43764277490476!3d42.14333734059391!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8754f78c7cda6c31%3A0xf1b3b4fc465a4a3f!2sPreston%2C%20ID%2083263!5e0!3m2!1sen!2sus!4v1571241140688!5m2!1sen!2sus"></iframe>
+        </div>
+    </main>
+
+    <footer>
+        
+        <address>
+            <h2>Contact Information</h2>
+            <b>Address:</b> 111 W 7 S, Rexburg, ID 83440</br>
+            <b>Email:</b><a href="twc_4@gmail.com"> twc_4@gmail.com</a><br>
+            <b>Phone number: </b><a href="tel:+12086007159"> (208) 600-7159</a>
+        </address>
+        <div>
+                &copy; <span id="currentDate"></span> &star; The Weather Corner &star; Julius Kashihakumwa &star; <a
+                    href="http://www.byui.edu" target="_blank">BYU-Idaho</a>
+            </div>
+       
+    </footer>
+    <script src="scripts/main.js"></script>    
+</body>
 </html>
