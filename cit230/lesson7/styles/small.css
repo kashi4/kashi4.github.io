@@ -1,0 +1,137 @@
+
+@import url('https://fonts.googleapis.com/css?family=Ubuntu&display=swap');
+
+font {
+  font-family: 'Ubuntu', sans-serif;
+}
+
+main{
+  max-width: 400px;
+  margin: 0 auto;
+  display: grid;
+
+}
+
+header {
+    background-color: #00798c;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header img {
+  width: 60px;
+  padding-right: 10px;
+}
+
+
+
+h1, h2, h3 {
+  font-family: Merriweather;
+}
+
+p {
+  font-family: Heebo;
+}
+
+
+
+h1 {
+  font-size: 40px;
+  color: #a6e1fa;
+  padding-left: 10px;
+}
+
+h2 {
+  font-size: 22px;
+  text-align: center;
+}
+
+h3 {
+  text-align: center;
+  color: #00798c;
+}
+
+/* ------ Navigation Styles ------ */
+
+nav {
+  background-color: /*#00798c*/ white;
+  margin-top: -5px;
+  border-top: 3px #00798c solid;
+}
+
+.navigation {
+  list-style: none;
+  text-align: center;
+  padding: 0;
+  padding-bottom: 8px;
+}
+
+.navigation li:first-child {
+  display: block;
+}
+
+.navigation li {
+  display: none;
+}
+
+.navigation a {
+  color: #00798c;
+  text-decoration: none;
+  font-family: Heebo;
+  font-size: 18px;
+  padding: 0.75rem;
+}
+
+.navigation a:hover {
+  color: black;
+  text-decoration: underline;
+  transition-duration: 1s;
+}
+
+
+
+/* ----- Footer styles ----- */
+
+footer {
+  background-color: #00798c;
+  padding: 10px 0 10px 0;
+}
+
+footer span, footer p {
+  color: #a6e1fa;
+  text-align: center;
+  font-family: Heebo;
+}
+
+.copyright {
+  max-width: 800px;
+  margin: 20px 0px;
+  margin: 0 auto;
+  border-top: #a6e1fa solid 2px;
+  padding: 20px 0px;
+}
+
+footer p {
+  margin: 5px 0px;
+}
+
+/* ----- onclick JS toggle class style ----- */
+.responsive li {
+  display: block;
+}
+
+/* ------ Hero Image Styles ----- */
+.hero-image {
+  width: 400px;
+  box-shadow: 3px 3px 5px #00798c;
+}
+
+.hero-container {
+  position: relative;
+  padding-block: ;
+}
+
+
+
+
