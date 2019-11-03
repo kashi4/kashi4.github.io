@@ -4,6 +4,8 @@
     }
   }
 
-  body {
-      background-color: grey;
-  }
+  
+.portfolio {
+  background-color: gray;
+  font-style: italic;
+}
