@@ -25,13 +25,22 @@
         <h3>Description</h3>
         <p>...</p>
         <h3>Examples</h3>
-        <p></p>
-        <h3>Days of Week</h3>
-        <p id="daysOfWeek"></p>
+        <p> // The tempreture in kelvin for today
+                const kelvin = 311;
+                //converting kelvin to celsius
+                const celsius = kelvin - 273;
+                // The equation to calclute fahrenheit from celcius
+                let fahrenheit = (celsius * (9/5) + 32);
+                //using the .floor math to get rid of the decimal number
+                fahrenheit = Math.floor(fahrenheit);
+                console.log(`The tempreture is ${fahrenheit} degrees Fahrenheit.`);
+                </p>
+        <h3>convert Tempreture</h3>
+        <p id="conversion"></p>
     </section>
     </main>
     <footer>
-        <button type="button" onclick="">Get Days of Week</button>
+        <button type="button" onclick="">temp in fahrenheit</button>
     </footer>
     <script src="scripts/topic1.js"></script>
 </body>
