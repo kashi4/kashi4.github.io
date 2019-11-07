@@ -13,6 +13,7 @@ let familyFriends = [
 console.log(familyFriends[3]);*/
 
 //combining object and arrays: Java Script Object Notation
+/*
 
 let familyFriends = [
   {
@@ -36,4 +37,13 @@ let familyFriends = [
   'child2':'Nafimane','child3':'Selma','child4':'Hafeni','child5':'tangeni'
   }
 ]
-console.log(familyFriends[4].child2);
+console.log(familyFriends[4].child2); */
+// AJAX
+
+let myRequest = new XMLHttpRequest();
+myRequest.open('GET','https://raw.githubusercontent.com/kashi4/kashi4.github.io/master/cit261/topic3/topic3.js');
+myRequest.onload = function() {
+let myData = JSON.parse(myRequest.responseText);
+  console.log(myData[0]);
+};
+myRequest.send();
