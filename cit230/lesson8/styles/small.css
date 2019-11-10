@@ -30,9 +30,7 @@ header img {
 }
 
 
-label {
-  display: block;
-}
+
 h1, h2, h3 {
   font-family: Merriweather;
 }
@@ -58,9 +56,11 @@ h3 {
 
 nav {
   background-color: /*#00798c*/ white;
-  margin-top: -5px;
+  margin-top: 5px;
+  margin-top: 5px;
   border-top: 3px #00798c solid;
 }
+
 
 .navigation {
   list-style: none;
