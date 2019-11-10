@@ -69,7 +69,7 @@
             </div>
             <div>
                     <label for="StormSeverity">Storm severity:</label>
-                    <input type="range" id="rating" name="StormSeverity" value="5" min="1" max="10" 
+                    <input type="range" id="rating" name="stormSeverity" value="5" min="1" max="10" 
                     class="slider" step="1" list="tickmarks"
                         oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
                         <span id="ratingvalue">5</span>
@@ -79,8 +79,8 @@
             </div>    
             <div>
                     <label for="stormRegion">Storm Region:</label>
-                    <select name="stormRegion" id="stormRegion"></select>
-                    <option selected disabled value="Select Region">Select Region</option>
+                    <select name="stormRegion" id="stormRegion">
+                    <option value="Select Region" selected disabled>Select Region</option>
                     <option value="Preston">Preston></option>
                     <option value="Sugar City">Sugar City</option>
                     <option value="Fish Haven">Fish Haven</option>
@@ -112,11 +112,11 @@
                     </div>
                     <div>
                         <input type="radio" value="No" name="danger">
-                        <label for="Yes">Yes</label>
+                        <label for="Yes">No</label>
                     </div>
                     <div>
                         <input type="radio" value="Maybe" name="danger">
-                        <label for="Yes">Yes</label>
+                        <label for="Yes">Maybe</label>
                     </div>
                 </div>
             </div>
