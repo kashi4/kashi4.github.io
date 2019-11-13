@@ -24,21 +24,27 @@ function hideLoop()
 {
     document.getElementById("loop").style = "display:none;";
 }
-            
 // conditional statement
+function clickMe() {
+    let myNum = document.getElementById("num").value;//prompt("Please enter your lucky number");
+    //document.getElementById("clickMe").value = "display:none;";
 
-function displayNumber(){
-    let a = 10, b = 20;
-    if (a > b) {
-        display = 'a is greater than b';
-     } else if (a < b) {
-        display = 'a is less than b';
-     } else {
-        display = 'a is equal to b';
-     }
+    if(myNum == 7){
+        alert("Congratulations you won!");
+        }
+     else if(myNum < 7 ){
+         alert("Sorry better luck next time");
+     }   
+    else{	
+        alert("Please try again");
+        
+    }
+
+
+   
 }
     
-    document.getElementById("demo").innerHTML = display;
+
                    
                
 		   
