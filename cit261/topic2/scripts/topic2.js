@@ -58,17 +58,57 @@ console.log('Julius Kashihakumwa is 39 years old');
 console.log('Theopolina Kashihakumwa is 35 years old'); */
 
 // function to tell us their name and age
-function person(name, age){
-    console.log(name + " " + 'is'+ " " + age + " " + 'years old.' );
-}
-
+////function person(name, age){
+    //console.log(name + " " + 'is'+ " " + age + " " + 'years old.' );
+//}
+/*
 let juliusK = 'Julius Kashihakumwa';
 let juliusAge = 39;
 
 person('Julius Kashihakumwa',39);
-person('Theopolina Kashihakumwa',35);
+person('Theopolina Kashihakumwa',35);*/
 
 
+// Function constructor, Julius object
 
+var julius = {
+    name:'Julius',
+    yearOfBirth:1981,
+    profession:'teacher'
+};
+// function constructor is making a blue-print to create many objects [make a function]
+
+var Person = function(name, yearOfBirth,profession){
+    this.name = name;
+    this.yearOfBirth = yearOfBirth;
+    this.profession = profession;
+    // add an inheritance
+    
+    
+}
+// now that we have a function constructor, we can use it to create a Julius object (instantiation)
+
+var julius = new Person('Julius',1981,'teacher');
+
+//inheritance: setting a prototype
+
+Person.prototype.calculateAge = function() {
+    console.log(2019 - this.yearOfBirth);
+};
+
+Person.prototype.lastName = 'Kashihakumwa';
+var Nafimane = new Person('Nafimane',1982,'electrician');
+var hafeni = new Person('Hafeni',1995,'lawyer');
+var tangeni = new Person('Tangeni',1997,'engineer');
+
+julius.calculateAge();
+Nafimane.calculateAge();
+hafeni.calculateAge();
+tangeni.calculateAge();
+
+console.log(julius.lastName);
+console.log(Nafimane.lastName);
+console.log(hafeni.lastName);
+console.log(tangeni.lastName);
 
 

@@ -1,7 +1,28 @@
-let myRequest = new XMLHttpRequest();
-myRequest.open('GET','https://raw.githubusercontent.com/kashi4/kashi4.github.io/master/cit261/topic3/topic3.js');
-myRequest.onload = function() {
-let myData = JSON.parse(myRequest.responseText);
-  console.log(myData[0]);
-};
-myRequest.send();
+let teams =
+`[
+  {
+      "name":"The Goats",
+      "captain":"Ty Dunn",
+      "numberOfPlayers":15,
+      "teamColor":"blue"
+  },
+  {
+      "name":"Panda Bandits",
+      "captain":"Thomas Kochan ",
+      "numberOfPlayers":12,
+      "teamColor":"green"
+  },
+  {
+    "name":"Red dragons",
+    "captain":"Jeff Hamilton ",
+    "numberOfPlayers":18,
+    "teamColor":"red"
+},
+{
+  "name":"Catalunyas",
+  "captain":"Jose Hernandez ",
+  "numberOfPlayers":11,
+  "teamColor":"grey"
+}
+]`
+console.log(JSON.parse(teams)[3].teamColor);

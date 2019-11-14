@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu&display=swap');
+
+p {
+  font-family: Heebo;
+}
+
+
+h1 {
+  border: black;
+  background-color:lightslategray;
+  text-align: center;
+}
+img {
+  width: 200px;
+
+}
+
+article {
+
+  background-color: lightblue;
+  margin: 5px;
+  padding: 5px;
+  text-align: center;
+  border-radius:5% ;
+}
+section{
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+footer{
+  text-align: center;
+}
+@media only screen and (min-width:32.5em){
+  section {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media only screen and (min-width:62em){
+  section {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+
+
