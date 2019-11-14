@@ -1,4 +1,4 @@
-let teams =
+/*let teams =
 `[
   {
       "name":"The Goats",
@@ -24,5 +24,20 @@ let teams =
   "numberOfPlayers":11,
   "teamColor":"grey"
 }
-]`
-console.log(JSON.parse(teams)[3].teamColor);
+]` 
+console.log(JSON.parse(teams)[3].teamColor);*/
+
+
+function teamJson(){
+  var members = {
+// key value pairs
+    "name":"Julius",
+    "age":38,
+    "HomeTown":"Windhoek",
+    "favFood":["braai","pap","vleis","matangala","spagettiBolonagse",""]
+  };
+
+  for(var i in members){
+    document.getElementById("jsonData").innerHTML += members[i] + "<br>";
+  }
+}
