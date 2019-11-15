@@ -18,28 +18,27 @@
 //localStorage.setItem('name',"Julius");
 //console.log(localStorage.getItem("age","name"));
 
-const inpKey = document.getElementById('inpKey');
-const inpValue = document.getElementById('inpValue');
+const inpKey = document.getElementById("inpKey");
+const inpValue = document.getElementById("inpValue");
 
-const btnInsert =document.getElementById('btnInsert');
-const lsOutput = document.getElementById('lsOutput');
+const btnInsert =document.getElementById("btnInsert");
+const lsOutput = document.getElementById("lsOutput");
 
 btnInsert.onclick = function() {
     const key = inpKey.value;
     const value = inpValue.value;
 
-  
+       
     
     if(key && value){
         localStorage.setItem(key,value);
-        location.reload;
+        location.reload();
     }
-// test if all is working with "conditional statement"
 };
 
 for (let i = 0; i < localStorage.length; i++) {
     const key = localStorage.key(i);
     const value = localStorage.getItem(key);
 
-    lsOutput.innerHTML += `${key}: ${value}<br/>`;  
+    lsOutput.innerHTML += `${key}: ${value}<br />`;  
 }

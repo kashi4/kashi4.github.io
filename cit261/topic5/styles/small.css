@@ -29,10 +29,10 @@
 
 input,button {
   padding: 3px;
-  height: 20px;
+  height: 40px;
   border-top: lightslategray;
 }
 
 fieldset {
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
