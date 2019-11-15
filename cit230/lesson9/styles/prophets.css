@@ -9,9 +9,15 @@ h1 {
   border: black;
   background-color:lightslategray;
   text-align: center;
+  padding: 20px;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 50px;
 }
 img {
   width: 200px;
+  margin: 10px;
+  box-shadow: 0 0 20px;
 
 }
 
@@ -21,15 +27,27 @@ article {
   margin: 5px;
   padding: 5px;
   text-align: center;
-  border-radius:5% ;
+  border:5px outset white ;
 }
 section{
   display: grid;
   grid-template-columns: 1fr;
 }
 
+main {
+  background-color: thistle;
+  padding: 20px;
+  
+}
+
 footer{
-  text-align: center;
+
+  background-color: lightslategrey;
+  color:black;
+  padding: 30px;
+  margin-bottom: 0;
+  text-align:center;
+
 }
 @media only screen and (min-width:32.5em){
   section {

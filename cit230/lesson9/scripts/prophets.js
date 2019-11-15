@@ -51,10 +51,10 @@ const requestURL = 'https://byui-cit230.github.io/lessons/lesson-09/data/latter-
               birthplaceLabel.textContent = 'Place of Birth:'; 
 
               let birthplaceSpan = document.createElement('label');
-              birthplaceSpan.textContent = prophet.Birthplace;
+              birthplaceSpan.textContent = prophet.birthplace;
 
-              birthdateDiv.appendChild(birthdateLabel);
-              birthdateDiv.appendChild(birthplaceSpan);
+              birthplaceDiv.appendChild(birthplaceLabel);
+              birthplaceDiv.appendChild(birthplaceSpan);
 
               article.appendChild(birthplaceDiv);
 
