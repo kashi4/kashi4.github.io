@@ -1,49 +1,45 @@
+ //Local storage is the storage of data locally without using any outside open sources
+ //Local storage is done inside the web browser , it is stored to the domain
+ // and the protocol being used
 
-var currentDate = new Date();
-var currentDateString = new Date();
+ // LocalStorage.setItem("name","Julius"); // takes in a key pair value
+    //console.log(localStorage);
 
-// get day of the week
-var weekDayNumber = currentDate.getDay();
+// LocalStorage.clear() // clears the console but does not remove data
+// data in local storage does not expires, unless you use the localStorage.RemoveItem("name");
 
-var daysOfWeek = [
-    'Sunday','Monday','Tuesday','Wednesday',
-    'Thursday','Friday','Saturday',
-
-];
-
-var weekDay = daysOfWeek[weekDayNumber];
-currentDateString = weekDay + ', ';
-currentDateString += currentDate.getDate();
-var months = [
-    'January','February','March','April','May','June','July','August',
-    'September','October', 'November', 'December',
-];
-
-var monthNumber = currentDate.getMonth();
-var month = months[monthNumber];
-
-currentDateString += ' ' + month;
-currentDateString += ' ' + currentDate.getFullYear();
-document.getElementById('currentDate').innerHTML = currentDateString;
-//debugging
-
-et currentDay = weekDayNumber;
-for (let i =1; i < 6; i++) {
-    // add one day to current day
-    currentDay++;
+ //   localStorage.removeItem('name');
+//console.log(localStorage);
 
 
-// if current day is greater than 6 (Saturday), reset it to zero
+// Local storage setItem(). local storage store satff as "strings" even the numbers
+// you can access the keys by means of index (localStorage.key(1);)
+//localStorage.setItem('age',"38");
+//localStorage.setItem('name',"Julius");
+//console.log(localStorage.getItem("age","name"));
 
-if (currentDay > 6) {
-    currentDay = 0;
+const inpKey = document.getElementById('inpKey');
+const inpValue = document.getElementById('inpValue');
+
+const btnInsert =document.getElementById('btnInsert');
+const lsOutput = document.getElementById('lsOutput');
+
+btnInsert.onclick = function() {
+    const key = inpKey.value;
+    const value = inpValue.value;
+
+  
+    
+    if(key && value){
+        localStorage.setItem(key,value);
+        location.reload;
+    }
+// test if all is working with "conditional statement"
+};
+
+for (let i = 0; i < localStorage.length; i++) {
+    const key = localStorage.key(i);
+    const value = localStorage.getItem(key);
+
+    lsOutput.innerHTML += `${key}: ${value}<br/>`;  
 }
-const element = document.getElementById(`day${i}`);
-element.innerHTML = daysOfWeek[currentDay];
-}
-//assign value to placeholder in HTML
-
-if (weekDayNumber === 5){
-    document.getElementById("pancake").removeAttribute("class","hidden");
-} 
-

@@ -1,4 +1,4 @@
-/*let teams =
+let teams =
 `[
   {
       "name":"The Goats",
@@ -25,7 +25,7 @@
   "teamColor":"grey"
 }
 ]` 
-console.log(JSON.parse(teams)[3].teamColor);*/
+/*console.log(JSON.parse(teams)[3].teamColor);
 
 
 function teamJson(){
@@ -40,4 +40,4 @@ function teamJson(){
   for(var i in members){
     document.getElementById("jsonData").innerHTML += members[i] + "<br>";
   }
-}
+}*/

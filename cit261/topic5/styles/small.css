@@ -26,3 +26,13 @@
 	color:black;
 	border:1px solid lightblue;
 }
+
+input,button {
+  padding: 3px;
+  height: 20px;
+  border-top: lightslategray;
+}
+
+fieldset {
+  margin-bottom: 10px;
+}
