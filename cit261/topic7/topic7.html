@@ -10,13 +10,43 @@
 		</title>
 	</head>
 	<body>
-		<header>
+        <header>
             <a href="/cit261/index.html"></a>
-            CIT 261 Fluency Evidence</a>Manipulating CSS Class Properties Using JavaScript</header>
-        <br>
-        <h2>Manipulating CSS Class Properties Using JavaScript</h2>
-        <p></p>
-        
+            CIT 261 Fluency Evidence</a> Manipulating CSS Class Properties Using JavaScript</header>
+        <section>
+                        <br>
+                        <h2>Manipulating Class properties</h2>
+                    <div class="tooltip"><button onclick="changeClass(this.id)" id="classA">class A</button><span class="tooltiptext">Makes the font in Class A bold.</span></div>
+                    <div class="tooltip"><button onclick="changeClass(this.id)" id="classB">class B</button><span class="tooltiptext">Increases the font size in Class B.</span></div>
+                    <div class="tooltip"><button onclick="changeClass(this.id)" id="classC">class C</button><span class="tooltiptext">Changes the font color in Class C to goldenrod.</span></div>
+                    <button onclick="reset()" id="classC">Reset All</button>
+                    <h4>Class A</h4>
+                    <div class="A1">Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                             Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
+                             nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in 
+                             reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla 
+                             pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa
+                              qui officia deserunt mollit anim id est laborum.</div>
+                    <h4>Class B</h4>
+                    <div class="B1">Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                             Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in 
+                              reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                               pariatur. Excepteur sint occaecat cupidatat non proident, sunt in 
+                               culpa qui officia deserunt mollit anim id est laborum.</div>
+                    <h4>Class C</h4>
+                    <div class="C1">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                             sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                              Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
+                              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in 
+                              reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                               pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa
+                                qui officia deserunt mollit anim id est laborum.</div>
+                    
+                            <br>
+        </section>   
        
          
 
@@ -27,7 +57,7 @@
         
 	    
 		<footer>
-                &copy; <span id="currentDate"></span> &star; Java Scripts Lesson 1 &star; Julius Kashihakumwa &star; <a href="http://www.byui.edu" target="_blank">BYU-Idaho</a>
+                &copy; <span id="currentDate"></span> &star; Java Scripts Lesson 7 &star; Julius Kashihakumwa &star; <a href="http://www.byui.edu" target="_blank">BYU-Idaho</a>
         </footer>
         <script src="/cit261/topic7/scripts/topic7.js"></script>
 	</body>
