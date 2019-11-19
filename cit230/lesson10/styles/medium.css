@@ -17,7 +17,7 @@
 		grid-template-columns: 1fr 1fr;
 	}
 	/* id selectors */
-	/* #map {
+	#map {
 		display: block;
 	}
 	#forecast {
@@ -27,6 +27,6 @@
 	#gallery {
 		display: grid;
 		grid-template-columns: 1fr 1fr;
-	} */
+	}
 }
 

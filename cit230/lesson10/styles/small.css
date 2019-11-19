@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu&display=swap');
+
+font {
+  font-family: 'Ubuntu', sans-serif;
+}
+
+main{
+  max-width: 400px;
+  margin: 0 auto;
+
+}
+
+header {
+    background-color: #00798c;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header img {
+  width: 60px;
+  padding-right: 10px;
+}
+
+
+
+p {
+    color:black;
+    font-family: 'PT Serif', serif;
+    text-align: center;
+}
+
+h1 {
+    font-size: 40px;
+    color: #a6e1fa;
+    padding-left: 10px;
+  }
+  
+  h2 {
+    font-size: 22px;
+    text-align: center;
+  }
+
+.grid img {
+    width: 200px;
+    padding: 25px;
+    
+}
+
+
+
+.grid article {
+    width: 350px;
+    border: 5px solid black;
+
+   align-items: flex-end
+   width: 100%;
+   display: block;
+ 
+   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+ 
+  text-align: center;
+  
+}
+   
+    
+  }
+}
+
+
+
+section {
+    display: ;
+    
+    padding: 20px;
+    background-color: whitesmoke;
+   
+    font-size: 20px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+a {
+    font-family: 'PT Serif', serif;
+}
+
+p {
+    color:black;
+    font-family: 'PT Serif', serif;
+    text-align: center;
+}
+nav a:hover {
+    text-decoration: none;
+    font-weight:bold;
+}
+nav a:visited{
+    text-decoration: none;
+    color: white;
+}
+
+h1 {
+    color: black;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+h2 {
+    color: black;
+    align-content: center;
+    font-family: 'PT Serif', serif;
+}
+
+.p{
+    text-size-adjust: 2px;
+    text-decoration: black cursive;
+}
+header {
+    color: grey;
+    font-size: 36px;
+    background-color:lightskyblue;
+    text-align: center;
+    padding: 0.75rem;
+    margin: 0 auto;
+    /* max-width: 735px; */
+    font-family: 'PT Serif', serif;
+}
+
+
+article {
+    background-color: skyblue;
+    border:1px black;
+    text-align: center;
+        
+        
+      
+      
+  
+  
+}
+li a {
+    text-decoration:none ;
+}
+
+
+ul {
+    background-color: lightskyblue;
+    /* border: 1px solid #f2a541; */
+    display: flex; 
+    flex-direction: row;
+    justify-content: space-around;
+     padding: 20px; 
+}
+.highlight {
+    font-weight: bold;
+}
+
+section{
+    display: grid;
+    padding:10px;
+}
