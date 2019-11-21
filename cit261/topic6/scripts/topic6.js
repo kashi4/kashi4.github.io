@@ -1,29 +1,21 @@
-import { Student } from './student.js';
-
-let students = [
-    new Student('Julius', 'Kashihakumwa', '2086007157'),
-    new Student('Theo', 'Naftali', '408700654'),
-    new Student('James', 'Hatuikulipi', '0813040307')
-];
+// creatin a virtual DOM: the object representation of the DOM
+var DOMobject = document.createElement('main');
 
 
-students.forEach(
-    (student) => {
-        let tr = document.createElement("tr");
-    
-        let tdFirstName = document.createElement("td");
-        let tdLastName = document.createElement("td");
-        let tdINumber = document.createElement("td");
+//modifying the element created by adding some css
+DOMobject.id = "myMain";
+DOMobject.style.width = "300px";
+DOMobject.style.height = "300px";
+DOMobject.style.background = "lightgrey";
+DOMobject.style.textDecorationColor = "solid blue";
+DOMobject.innerText = "Javascript Object representing an HTML element";
 
-        tdFirstName.innerHTML = student.firstName;
-        tdLastName.innerHTML = student.lastName;
-        tdINumber.innerHTML = student.iNumber;
+// we will now append our object we created 
 
-        tr.appendChild(tdFirstName);
-        tr.appendChild(tdLastName);
-        tr.appendChild(tdINumber);
+document.body.appendChild(DOMobject);
 
-        document.getElementById("students").appendChild(tr);
-    }
-);
+var spanElement = createElement("span");
+spanElement.innerText = "This is the span within my main";
+spanElement.style.textDecorationColor ="solid blue";
+document.getElementById("myMain").appendChild(spanElement);
 
