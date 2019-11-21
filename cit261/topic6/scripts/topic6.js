@@ -1,29 +1,29 @@
+import { Student } from './student.js';
 
-// Parent Element
-
-
-// New list Item(<li>)
-// we have created a new list item by using the document.createElement('li)
-// And appendChild(newListItem) it to the already exiting un-ordered list parent
-
-//let newListItem =document.createElement("li");
-//newListItem.textContent = "Ford";
+let students = [
+    new Student('Julius', 'Kashihakumwa', '2086007157'),
+    new Student('Theo', 'Naftali', '408700654'),
+    new Student('James', 'Hatuikulipi', '0813040307')
+];
 
 
+students.forEach(
+    (student) => {
+        let tr = document.createElement("tr");
+    
+        let tdFirstName = document.createElement("td");
+        let tdLastName = document.createElement("td");
+        let tdINumber = document.createElement("td");
 
-//myCarList.appendChild(newListItem);
+        tdFirstName.innerHTML = student.firstName;
+        tdLastName.innerHTML = student.lastName;
+        tdINumber.innerHTML = student.iNumber;
 
-// Example, will convert an array of cars into  un-ordered list and append 
+        tr.appendChild(tdFirstName);
+        tr.appendChild(tdLastName);
+        tr.appendChild(tdINumber);
 
-// all the cars  to the parent list, to do that I will need to put my array into a for loop
+        document.getElementById("students").appendChild(tr);
+    }
+);
 
-const myCarList = document.getElementById("myCarList");
-const carList = ["Ford","Cadillac","Buick","GMC","Chrysler","Dodge","Jeep","Tesla"];
-
-for (let cars of carList){
-    let newListItem = document.createElement("li");
-    newListItem.textContent = cars;
-
-    myCarList.appendChild(newListItem);
-    // now we should see a list of cars  with all of our cars in the parent ul list
-}

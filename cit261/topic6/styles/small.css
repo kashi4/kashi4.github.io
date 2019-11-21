@@ -25,4 +25,58 @@
 	background:skyblue;
 	color:black;
 	border:1px solid lightblue;
+}/* html selectors */
+
+h3 {
+  margin-bottom: 3px;
+}
+
+nav {
+  background-color: darkgray;
+}
+
+nav li {
+  border: 1px solid black;
+  border-collapse: collapse;
+  line-height: 2em;
+  width: 100%;
+}
+
+nav li a {
+  color: skyblue;
+  display: inline-block;
+  text-decoration: none;
+  width: 100%;
+}
+
+nav ul {
+  
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  padding: 0;
+}
+
+table, tr, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+  padding: 5px;
+}
+
+
+/* class selectors */
+.active {
+  background-color: lightgray;
+}
+
+.center {
+  text-align: center;
+}
+@media only screen and (min-width: 32.5em) {
+
+  nav ul {
+      flex-direction: row;
+      justify-content: space-around;
+  }
+
 }
