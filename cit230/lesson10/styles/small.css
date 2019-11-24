@@ -1,21 +1,16 @@
-
 @import url('https://fonts.googleapis.com/css?family=Ubuntu&display=swap');
-
-font {
-  font-family: 'Ubuntu', sans-serif;
-}
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap');
 
 main{
   max-width: 400px;
   margin: 0 auto;
-
 }
 
 header {
-    background-color: #00798c;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  background-color: skyblue;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 header img {
@@ -29,15 +24,15 @@ article img {
 
 
 h1, h2, h3 {
-  font-family: Merriweather;
+  font-family: 'Ubuntu', sans-serif;
 }
 
 p {
-  font-family: Heebo;
+  font-family: 'Josefin Sans', sans-serif;
 }
 
 article {
-  border: 3px #00798c solid;
+  border: 3px lightslategray;
   border-radius: 10px;
   margin-top: 5px;
   margin-bottom: 5px;
@@ -51,7 +46,7 @@ article p {
 
 h1 {
   font-size: 40px;
-  color: #a6e1fa;
+  color:black solid;
   padding-left: 10px;
 }
 
@@ -68,13 +63,13 @@ h3 {
 /* ------ Navigation Styles ------ */
 
 nav {
-  background-color: /*#00798c*/ white;
+  background-color: lightslategrey ;
   margin-top: -5px;
   border-top: 3px #00798c solid;
 }
 
 .navigation {
-  list-style: none;
+  list-style: lower-roman;
   text-align: center;
   padding: 0;
   padding-bottom: 8px;
@@ -127,12 +122,12 @@ table, td, th {
 /* ----- Footer styles ----- */
 
 footer {
-  background-color: #00798c;
+  background-color:skyblue;
   padding: 10px 0 10px 0;
 }
 
 footer span, footer p {
-  color: #a6e1fa;
+  color: silver;
   text-align: center;
   font-family: Heebo;
 }
@@ -141,7 +136,7 @@ footer span, footer p {
   max-width: 800px;
   margin: 20px 0px;
   margin: 0 auto;
-  border-top: #a6e1fa solid 2px;
+  border-top: silver solid 2px;
   padding: 20px 0px;
 }
 
@@ -183,6 +178,3 @@ footer p {
   margin: 10px 0px;
   text-shadow: 2px 2px 6px white;
 }
-
-
-

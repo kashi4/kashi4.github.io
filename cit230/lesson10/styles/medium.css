@@ -1,59 +1,59 @@
 @media only screen and (min-width: 32.5em) {
+    body {
+        background-image: url(sky.jpg);
+    }
     
+    main {
+        max-width: 500px;
+        margin: 0 auto;
+    }
+
+    .hero-image {
+        width: 500px;
+    }
     
-  main {
-      max-width: 500px;
-      margin: 0 auto;
-  }
+    #map {
+        display: block;
+    }
 
-  .medium-hero {
-      display: block;
-      width: 500px;
-  }
+    #forecast {
+        display: block;
+    }
 
-  .hero-image, .small-hero {
-      display: none;
-  }
-  
-  #map {
-      display: block;
-  }
+    td {
+        background-color: #00798c;
+        color: #a6e1fa;
+    }
 
-  #forecast {
-      display: block;
-  }
+    th {
+        background-color: burlywood;
+    }
 
-  td {
-      background-color: #00798c;
-      color: #a6e1fa;
-  }
+    table {
+        background-color: black;
+        font-family: Heebo;
+    }
 
-  th {
-      background-color: #a6e1fa;
-  }
+    #blue {
+        background-color: #a6e1fa;
+    }
 
-  table {
-      background-color: black;
-      font-family: Heebo;
-  }
+    #frame {
+        display: block;
+        margin: 15px 0px;
+        text-align: center;
+    }
 
-  #blue {
-      background-color: #a6e1fa;
-  }
+    .weather-summary {
+        width: 200px;
+    }
 
-  #frame {
-      display: block;
-      margin: 15px 0px;
-      text-align: center;
-  }
+    table {
+        margin: 0 auto;
+    }
 
-  .weather-summary {
-      width: 200px;
-  }
-
-  table {
-      margin: 0 auto;
-  }
-
-  
+    
 } 
+
+
+
