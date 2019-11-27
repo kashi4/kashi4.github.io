@@ -1,12 +1,16 @@
-const myImg1 = document.getElementById('myImg1');
-const myImg2 = document.getElementById('myImg2');
+var content = document.getElementById("content");
+var button = document.getElementById("display more");
 
-myImg1.addEventListener('load', function () {
-    alert("Welcome to Windhoek-Namibia");
+button.onclick = function() {
+    if (content.className == "open"){
+        // shrink the box
+        content.className = "";
+        button.innerHTML = "display more";
+    } else {
+        // expand the box
+        content.className = "open";
+        button.innerHTML = "display less";
+    }
 
-});
+};
 
-myImg2.addEventListener('load', function () {
-    alert("This is Swakopmund-Namibia");
-
-});
