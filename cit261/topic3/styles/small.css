@@ -5,10 +5,15 @@
     }
   }
 
-  body,p{
-    color: blue;
+  body,p,h6{
+    color: solid black;
+    text-decoration-color: black;
   }
   
+  .h1,h2{
+    color: solid black;
+    text-decoration-color: black;
+  }
  header
   {
     text-align:center;

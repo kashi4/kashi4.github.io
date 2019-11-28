@@ -3,7 +3,7 @@ var laFamilia = {"Members":[
   {"name":"Theopolina","age":35,"lastname":"Kashihakumwa","occupation":"student"},
   {"name":"Theocha","age":11,"lastname":"Kashihakumwa","occupation":"unemployeed"},
   {"name":"Letisha","age":9,"lastname":"Kashihakumwa","occupation":"minor"},
-  {"name":"Theodor","age":6,"lastname":"Kashihakumwa","occupation":"StillAChild"},
+  {"name":"Theodor","age":6,"lastname":"Kashihakumwa","occupation":"StillAchild"},
 ]};
 var i, dis;
 for(i=0, dis = "";i < laFamilia.Members.length ; i++){
@@ -16,7 +16,9 @@ function createJson(){
   if(select => 0 && select <= 5){
       for(j=0;j < laFamilia.Members.length ; j++){
           if(j == select){
-              document.getElementById('content').innerHTML = "I'm " + laFamilia.Members[j].name + " " + laFamilia.Members[j].lastname + "." + " I'm " + laFamilia.Members[j].age + " years old and my occupation is " + laFamilia.Members[j].occupation;
+              document.getElementById('content').innerHTML = "I'm " + laFamilia.Members[j].name + " "
+               + laFamilia.Members[j].lastname + "." + " I'm " + laFamilia.Members[j].age + 
+               " years old and my occupation is " + laFamilia.Members[j].occupation;
               ;
           }
       }

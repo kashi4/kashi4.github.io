@@ -1,14 +1,37 @@
 [
     {
-        "name":"The Goats",
-        "captain":"Ty Dunn",
-        "numberOfPlayers":15,
-        "teamColor":"blue"
+        "name":"Julius",
+        "age":38,
+        "lastname":"Kashihakumwa",
+        "occupation":"student"
     },
     {
-        "name":"Panda Bandits",
-        "captain":"Thomas Kochan ",
-        "numberOfPlayers":12,
-        "teamColor":"green"
+        "name":"Theopolina",
+        "age":34,
+        "lastname":"Kashihakumwa",
+        "occupation":"Student"
+    },
+
+    {
+        "name":"Theocha",
+        "age":11,
+        "lastname":"Kashihakumwa",
+        "occupation":"unemployeed"
+    },
+
+    {
+        "name":"Letisha",
+        "age":9,
+        "lastname":"Kashihakumwa",
+        "occupation":"minor"
+    },
+
+    {
+        "name":"Theodor",
+        "age":6,
+        "lastname":"Kashihakumwa",
+        "occupation":"stillAchild"
     }
+
+    
 ]
