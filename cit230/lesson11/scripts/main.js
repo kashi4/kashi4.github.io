@@ -1,47 +1,23 @@
+var currentDate = new Date();
+var currentYear = currentDate.getFullYear();
+var months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+var days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+var days2 = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
 
-// get day of the week
-var weekDayNumber = currentDate.getDay();
+// Inject to DOM (Footer)
+document.getElementById("currentDate").innerHTML = days[currentDate.getDay()] + ", " + months[currentDate.getMonth()] + " " + currentDate.getDate() + ", " + currentYear;
 
-var daysOfWeek = [
-    'Sunday','Monday','Tuesday','Wednesday',
-    'Thursday','Friday','Saturday',
+// ToggleMenu
+function toggleMenu() {
+    document.getElementsByClassName("navigation")[0].classList.toggle("responsive");
+}
 
-];
+if (currentDate.getDay() == 5) {
+    document.getElementById("pancake").removeAttribute("class", "hidden");
+}
 
-// Fetch the data
-// function getWeather()
-
-const apiForecastURL = 'http://api.openweathermap.org/data/2.5/forecast/?id=5604473&appid=4382ef58145d424ca7ee8af38e82d6d6&units=imperial';
-fetch(apiForecastURL)
-.then(
-    (response) => response.json()
-
-)
-.then(
-    (forecast) => {
-        let nextDate = new Date();
-        nextDate.setDate(nextDate.getDate() + 1);
-        let dateString = getDateString(nextDate);
-        let hourString = '18:00:00';
-        let counter = 1;
-     
-        
-        // loop through results
-        forecast.list.forEach(
-            (forecast) => {
-                if(//forecast.dt_txt.includes(dateString) &&
-                forecast.dt_txt.includes(hourString)) {
-                
-                    const element = document.getElementById(`temp${counter}`);
-                    element.innerHTML = forecast.main.temp + '&deg';
-
-                    // increment variables
-                    counter += 1;
-                    nextDate.setDate(nextDate.getDate() + 1);
-                    dateString = getDateString(nextDate);
-                }
-            } 
-        );
+WebFont.load({
+    google: {
+        families: ['Londrina Shadow', 'Open Sans']
     }
-);
-
+});

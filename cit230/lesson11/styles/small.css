@@ -13,6 +13,162 @@ header {
   justify-content: center;
 }
 
+.headings header img {
+  width: 60px;
+  padding-left: 10px;
+}
+
+.Weather-Logo {
+  z-index: 1;
+  width: 100px;
+  height: 100px;
+  margin-top: 0em;
+  /* margin-left: 4em; */
+}
+
+.moto {
+  letter-spacing: 2.0pt;
+  font-size: larger;
+  margin-left: 2em;
+  margin-bottom: 1em;
+  color: rgb(55, 125, 190);
+  font-style: italic;
+  font-size: 1.2rem;
+  text-shadow: 2px 2px lightgray;
+}
+
+h1 {
+  color: rgb(55, 125, 190);
+  font-size: 1.2rem;
+  border-radius: 5px;
+  border-bottom: 5px solid lightblue;
+  margin-bottom: 1em;
+   z-index: 5;
+  text-align: center;
+  margin-top: 1em;
+  padding: .25em;
+  margin-right: 2em;
+  margin-left: 0.5em;
+  text-shadow: 2px 2px gray;
+  font-size: 40px;
+  color:black solid;
+  padding-left: 10px;
+}
+
+h2 {
+  color: Black;
+  font-size: 25px;
+  border-radius: 5px;
+  border-bottom: 5px solid black;
+  text-align: center;
+  margin-top: 2em;
+  border-bottom: 5px solid rgb(55, 125, 190);
+  background: lightblue;
+  padding-left: 3em;
+  padding-right: 3em;
+  padding: 1em;
+  text-shadow: gray;
+  box-shadow: gray;
+  border-radius: 15px;
+  justify-content: center;
+}
+
+h3 {
+  color: rgb(55, 125, 190);
+  font-size: 20px;
+  border-radius: 5px;
+  /* border-bottom: 5px solid  rgb(55, 125, 190); */
+   margin-top: -0.5em;
+  text-shadow: gray;
+  text-align: center;
+  margin-top: 1em;
+  background-color: lightblue;
+  display: block;
+  text-align: center;
+  box-shadow:gray;
+  padding: 0.5em;
+}
+article img {
+  width: 100%;
+}
+
+
+h1, h2, h3 {
+  font-family: 'Ubuntu', sans-serif;
+}
+
+p {
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+article {
+  border: 3px lightslategray;
+  border-radius: 10px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  background-color: #a6e1fa;
+}
+
+article p {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+
+/* ------ Navigation Styles ------ */
+
+nav {
+  margin: 0 auto;
+  background-color: lightslategrey ;
+   border-top: 3px #00798c solid;
+}
+
+.navigation {
+  list-style: none;
+  text-align: center;
+  padding: 0;
+  
+}
+
+.navigation li:first-child {
+  display: block;
+}
+
+.navigation li {
+  display: none;
+}
+
+.navigation a {
+  display: block;
+  color: #00798c;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 0.75rem;
+}
+
+.navigation a:hover {
+  color: black;
+  background-color: solid blue;
+  text-decoration: underline;
+  font-weight: 700;
+}
+
+table, td, th {
+  border: 1px solid black;
+}
+
+#forecast {
+  display: none; 
+}
+
+#frame {
+  display: none;
+}
+
+.hidden {
+  display: none;
+}
+
 header img {
   width: 60px;
   padding-right: 10px;
