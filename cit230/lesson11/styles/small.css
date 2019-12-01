@@ -88,6 +88,15 @@ h3 {
   box-shadow:gray;
   padding: 0.5em;
 }
+
+body {
+ background-color: lightsteelblue;
+ 
+  background-position: center bottom;
+  background-attachment: fixed;
+  min-width: 300px;
+  
+}
 article img {
   width: 100%;
 }
@@ -280,10 +289,11 @@ table, td, th {
 footer {
   background-color:skyblue;
   padding: 10px 0 10px 0;
+  text-align: center;
 }
 
 footer span, footer p {
-  color: silver;
+  color: black;
   text-align: center;
   font-family: Heebo;
 }
@@ -292,12 +302,14 @@ footer span, footer p {
   max-width: 800px;
   margin: 20px 0px;
   margin: 0 auto;
-  border-top: silver solid 2px;
+  border-top: black solid 2px;
   padding: 20px 0px;
+  text-align: center;
 }
 
 footer p {
   margin: 5px 0px;
+  text-align: center;
 }
 
 /* ----- onclick JS toggle class style ----- */
@@ -334,3 +346,101 @@ footer p {
   margin: 10px 0px;
   text-shadow: 2px 2px 6px white;
 }
+
+/*hero image css */
+.hero {
+  color: black;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  margin: 0px auto;
+  padding: 0px;
+}
+
+.hero-image {
+  width: 100%;
+  /* margin: -5px; */
+}
+
+
+.hero-text {
+  padding: 5px;
+  text-align: left;
+  position: absolute;
+  top: 48%;
+  left: 80%;
+  transform: translate(-50%, -50%);
+  color: black;
+  background-color: rgba(164, 160, 160, 0.2);
+  width: 200px;
+}
+
+.hero-text h2,
+p {
+  margin: 3px;
+  padding: 3px;
+}
+
+.hidden {
+  display: none;
+}
+
+.forecast {
+  display: none;
+  background: gray;
+  padding-bottom: 20px;
+}
+
+th,
+td {
+  border: 1.5px solid black;
+
+}
+
+section table,
+tr,
+th,
+td {
+  margin: 0 auto;
+  padding: 5px;
+  text-align: center;
+  vertical-align: center;
+}
+
+td>p {
+  margin-top: -11px;
+}
+
+#gallery {
+  display: grid;
+  grid-template-columns: 1fr;
+  
+}
+
+#gallery-main {
+  max-width: none;
+  margin: 0 auto;
+}
+/* all three towns small css */
+
+
+
+
+
+.grid {
+  display: flex;
+  grid-template-columns: 1fr;
+  justify-items: center;
+}
+
+article {
+  /* background-attachment: skyblue; */
+  background-color: skyblue;
+  margin: 15px;
+  padding: 20px;
+  text-align: center;
+  border-radius: 5%;
+  border:1px black;
+  /* max-width: 350px; */
+}  

@@ -54,3 +54,9 @@
 
     
 } 
+
+#gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+/* all three medium css */
