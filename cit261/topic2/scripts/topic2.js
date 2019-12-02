@@ -115,7 +115,7 @@ console.log(tangeni.lastName);*/
 //Create an object
 var person = {
     name: "Sese seko",
-    gender: "malee",
+    gender: "male",
     age: "74"
 };
 
