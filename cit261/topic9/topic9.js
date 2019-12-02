@@ -19,7 +19,8 @@ function barca(){
     document.getElementById("barcaDiv").classList.toggle("color");
     console.log("barca");
 }
-
-function myFunction() {
-    alert("Page is loaded");
-  }
+ 
+    function loadImage() {
+      alert("Image is loaded");
+    }
+  
