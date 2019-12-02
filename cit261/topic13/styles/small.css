@@ -1,51 +1,204 @@
-@media only screen and (max-width: 600px) {
-    body {
-      
-      background-color: yellowgreen;
-      padding: 50px;
-    }
-  }
+body {
+	background: lightgrey;
+}
 
-  
- header
-  {
-    text-align:center;
-    padding-top:50px;
-    padding-bottom:50px;
-    background:skyblue;
-    color:black;
-    font-size:1.5em;
-    border-left:1px solid lightblue;
-    border-right:1px solid lightblue;
-  }
+.one, #startBall {
+    width: 120px;
+    height: 50px;
+}
 
+.two {
+	width: 120px;
+    height: 50px;
+	color: blue;
+	border: black;
+	font-weight: bold;
+	
+}
 
-  .box {
-    display: inline-block;
-    background: aqua;
-    width: 200px;
-    height: 200px;
-    animation: relative;
-    animation: myframes 2s ease-in-out 0s infinite;
- 
-  }
-
-@keyframes myframes
- 0%
-height: 200px;
- 30%
- 
-
-  footer
-{
-	text-align:center;
-	padding-top:10px;
-	padding-bottom:10px;
-	background:skyblue;
-	color:black;
-	border:1px solid lightblue;
+#div1bottom, #div1top, .div1{
+	margin-left:50px;
 }
 
 
+#div1bottom, #div1top {
+  position: relative;
+  cursor: pointer;
+  width: 120px;
+  height: 50px;
+  visibility: hidden;
+}
 
-/*  CSS */
+#div1bottom {
+  border-top:5px solid blue;
+}
+
+#div1top {
+  border-bottom:5px solid blue;
+}
+
+#div1top.useKeyframes, #div1bottom.useKeyframes {
+	animation-name: path;
+	animation-duration: .5s;	
+}
+
+#div1top.useKeyframes2, #div1bottom.useKeyframes2 {
+	animation-name: path2;
+	animation-duration: .5s;
+	left: 124px;
+}
+
+#div1top.useKeyframes3, #div1bottom.useKeyframes3 {
+	animation-name: path3;
+	animation-duration: .5s;
+	left: 248px;
+}
+
+#div1top.useKeyframes4, #div1bottom.useKeyframes4 {
+	animation-name: path4;
+	animation-duration: .5s;
+	left: 372px;
+}
+
+
+@keyframes path {
+	0%   {left:500px; top:-1px;}
+    10%  {left:450px; top:-1px;}
+	20% {left:400px; top:-1px;}
+    30%  {left:350px; top:-1px;}
+    40% {left:300px; top:-1px;}
+	50% {left:250px; top:-1px;}
+	60% {left:200px; top:-1px;}
+	70% {left:150px; top:-1px;}
+	80% {left:100px; top:-1px;}
+	90% {left:50px; top:-1px;}
+	100% {left:0px; top:-1px;}
+   
+}
+
+@keyframes path2 {
+	0%   {left:624px; top:-1px;}
+    10%  {left:574px; top:-1px;}
+	20% {left:524px; top:-1px;}
+    30%  {left:474px; top:-1px;}
+    40% {left:424px; top:-1px;}
+	50% {left:374px; top:-1px;}
+	60% {left:324px; top:-1px;}
+	70% {left:274px; top:-1px;}
+	80% {left:224px; top:-1px;}
+	90% {left:174px; top:-1px;}
+	100% {left:124px; top:-1px;}
+   
+}
+
+@keyframes path3 {
+	0%   {left:748px; top:-1px;}
+    10%  {left:698px; top:-1px;}
+	20% {left:648px; top:-1px;}
+    30%  {left:598px; top:-1px;}
+    40% {left:548px; top:-1px;}
+	50% {left:498px; top:-1px;}
+	60% {left:448px; top:-1px;}
+	70% {left:398px; top:-1px;}
+	80% {left:348px; top:-1px;}
+	90% {left:298px; top:-1px;}
+	100% {left:248px; top:-1px;}
+   
+}
+
+@keyframes path4 {
+	0%   {left:820px; top:-1px;}
+    10%  {left:770px; top:-1px;}
+	20% {left:720px; top:-1px;}
+    30%  {left:670px; top:-1px;}
+    40% {left:620px; top:-1px;}
+	50% {left:570px; top:-1px;}
+	60% {left:520px; top:-1px;}
+	70% {left:470px; top:-1px;}
+	80% {left:420px; top:-1px;}
+	90% {left:370px; top:-1px;}
+	100% {left:320px; top:-1px;}
+   
+}
+
+.ball {
+	position: absolute;
+	width: 100px;
+	height: 100px;
+	background: blue;
+	border-radius: 100%;
+}
+
+.floor {
+	margin-top: 610px;
+	border-top:50px solid black;
+}
+
+@keyframes jump {
+	0% {bottom: 46%; left:0%}
+	11% {bottom: -10%; left: 10%, width:100px; height:100px; background: blue;}
+	10% {bottom: -10%; width:110px; height:80px; background:green;}
+	50% {bottom: 20%; left:40%; width:100px; height:100px; background:green;}
+	70% {bottom: -10%; width:100px; height:100px; background: green;}
+	71% {bottom: -10%; width:110px; height:80px; background:green;}
+	72% {bottom: -10%; left:55%; width:110px; height:80px; background:#FFDF00;}
+	82% {bottom: 0%; left:60%; width:100px; height:100px; background:green;}
+	86% {bottom: -10%; width:100px; height:100px; background: green;}
+	87% {bottom: -10%; left:65%; width:110px; height:80px; background:blue;}
+	100% {bottom: -10%; left:70%; }
+}
+
+@keyframes move { 
+	0% { transform: rotateZ(-15deg) rotateX(65deg); }
+	30% { transform: rotateZ(20deg) rotateX(50deg) rotateY(15deg); animation-timing-function: ease-in-out; }
+	60% { transform: rotateZ(-20deg) rotateX(65deg) rotateY(0deg); animation-timing-function: ease-in-out;  }
+	80% { transform: rotateZ(15deg) rotateX(50deg)rotateY(-15deg); animation-timing-function: ease-in-out;  }
+	100% { transform: rotateZ(15deg) rotateX(65deg)rotateY(0deg); animation-timing-function: ease-in-out;  }
+}
+
+@keyframes move2 { 
+	0% { transform: rotateZ(-15deg) rotateX(55deg); }
+	25% { transform: rotateZ(20deg) rotateX(60deg) rotateY(-50deg); animation-timing-function: ease-in-out; }
+	50% { transform: rotateZ(-20deg) rotateX(55deg) rotateY(-140deg); animation-timing-function: ease-in-out;  }
+	75% { transform: rotateZ(15deg) rotateX(60deg)rotateY(-220deg); animation-timing-function: ease-in-out;  }
+	100% { transform: rotateZ(-25deg) rotateX(55deg) rotateY(-300deg); animation-timing-function: ease-in-out;  }
+}
+
+@keyframes fall { 	
+	100% {
+		margin-top: 500px;	
+	}
+}
+
+@keyframes fall2 { 	
+	100% {
+		margin-top: 600px;	
+	}
+}
+ 
+#height{ 
+  height: 600px;
+  position: relative;
+  visibility: hidden;
+}
+
+#one, #two, #three, #four, #five{ 
+  position: absolute;
+  width: 10%;
+  transform-origin: 100px 300px 150px;
+  
+  animation-fill-mode: both;
+  animation-timing-function: ease-in-out, ease-in-out;
+}
+
+
+#one { top: -400px; left: 20%;}
+#two { top: -350px; left: 80%; animation-delay: 2s; transform: rotateY(180deg); }
+#three { width: 20%; top: -450px; left: 20%; animation-delay: 3.2s;}
+#four { width: 25%; top: -350px; left: 40%; animation-delay: 4.8s; }
+#five { width: 15%; top: -350px; left: 65%; animation-delay: 3.8s;}
+
+.floor2 {
+	margin-top: -100px;
+	border-top:400px solid black;
+}
