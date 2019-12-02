@@ -77,13 +77,7 @@ function startBallAnimation() {
 }
 
 function startLeavesAnimation() {
-	/*
-	var one = doc.getElementById("one");
-	var two = doc.getElementById("two");
-	var three = doc.getElementById("three");
-	var four = doc.getElementById("four");
-	var five = doc.getElementById("five");
-	*/
+	
 	var div = doc.getElementById("height");
 	div.style.visibility = "visible";
 	var leaves = div.children;
