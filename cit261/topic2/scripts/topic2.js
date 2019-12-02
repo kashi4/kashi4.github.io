@@ -71,7 +71,7 @@ person('Theopolina Kashihakumwa',35);*/
 
 // Function constructor, Julius object
 
-var julius = {
+/*var julius = {
     name:'Julius',
     yearOfBirth:1981,
     profession:'teacher'
@@ -81,14 +81,14 @@ var julius = {
 var Person = function(name, yearOfBirth,profession){
     this.name = name;
     this.yearOfBirth = yearOfBirth;
-    this.profession = profession;
+    this.profession = profession;*/
     // add an inheritance
     
     
-}
+
 // now that we have a function constructor, we can use it to create a Julius object (instantiation)
 
-var julius = new Person('Julius',1981,'teacher');
+/*var julius = new Person('Julius',1981,'teacher');
 
 //inheritance: setting a prototype
 
@@ -109,6 +109,42 @@ tangeni.calculateAge();
 console.log(julius.lastName);
 console.log(Nafimane.lastName);
 console.log(hafeni.lastName);
-console.log(tangeni.lastName);
+console.log(tangeni.lastName);*/
 
 
+//Create an object
+var person = {
+    name: "Sese seko",
+    gender: "malee",
+    age: "74"
+};
+
+var dictator = {
+    country: "Zaire",
+    period: "25 years",
+    
+};
+//Display person and dictator object values
+function displayObject() {
+    var output = Object.values(person) + "<br>" + Object.values(dictator);
+    document.getElementById("displayobj").innerHTML=output;
+}
+
+// add a method to display name and country together
+function createMethod() {
+    person.display = function(){return this.name + " " + this.name;};
+    country.display = function(){return this.country + " " + this.country;};
+}
+
+// display object with new method
+function addMethod() {
+    createMethod();
+    output = person.display() + "<br>" + dictator.display();
+    document.getElementById("methoddiv").innerHTML=output;
+}
+
+//Display all objects
+function displayAllObjects() {
+    output = Object.values(person) + "<br>" + Object.values(dictator);
+    document.getElementById("displayalldiv").innerHTML=output;
+}
