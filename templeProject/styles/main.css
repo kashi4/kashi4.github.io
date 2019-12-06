@@ -1,0 +1,64 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    
+    background-size: cover;
+    background-position:center;
+    font-family: Verdana;
+}
+
+.menu-bar
+{
+   background-color: skyblue;
+   text-align: center;
+   border-top:3px blue solid;
+   border-bottom:3px blue solid;
+
+}
+
+.menu-bar ul{
+    display: inline-flex;
+    list-style: none;
+    color:#fff;
+    
+}
+
+.menu-bar  ul li{
+    width: 120px;
+    margin: 10px;
+    padding: 10px;
+}
+
+.menu-bar  ul li a
+{
+    text-decoration: none;
+       
+}
+
+.active, .menu-bar  ul li a :hover
+{
+    background: white;
+    border-radius: 3px;
+} 
+.menu-bar .fa
+{
+    margin-right: 8px;
+}
+
+.sub-menu-1
+{
+    display: none;
+}
+
+.menu-bar ul li :hover .sub-menu-1
+{
+    display: block;
+    position: absolute;
+    background-color: blue;
+    margin-top: 15px;
+    margin-left: -15px;    
+}

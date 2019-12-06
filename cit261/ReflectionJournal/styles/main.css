@@ -1,0 +1,27 @@
+@media only screen and (max-width: 600px) {
+    body {
+      background-color: yellowgreen;
+
+    }
+  }
+
+  body,p,h6{
+    color: solid rgba(230, 185, 173, 0.493);
+    text-decoration-color: black;
+  }
+  
+  .h1,h2{
+    color: solid black;
+    text-decoration-color: black;
+  }
+ header
+  {
+    text-align:center;
+    padding-top:50px;
+    padding-bottom:50px;
+    background:skyblue;
+    color:black;
+    font-size:1.5em;
+    border-left:1px solid lightblue;
+    border-right:1px solid lightblue;
+  }
