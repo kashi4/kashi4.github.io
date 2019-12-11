@@ -1,27 +1,33 @@
-const apiKey = "83c8bac9c65d0a5a7bfe57cfe98d6486";
-let cityID = document.getElementById("cityID").value;
-const unit = "imperial";
-const apiweatherURL = `https://api.openweathermap.org/data/2.5/weather?id=${cityID}&units=${unit}&appid=${apiKey}`;
-fetch(apiweatherURL)
-    .then((response) => response.json())
-    .then((currentWeather) => {
-        let currentTemp = currentWeather.main.temp;
-        let windSpeed = currentWeather.wind.speed;
-        let humidity = currentWeather.main.humidity;
-        let currentDesc = currentWeather.weather[0].main;
-        let windChill = 0;
-        let high = currentWeather.main.temp_max;
-        if (currentTemp < 50 && windSpeed > 3) {
-            windChill = 35.74 + 0.6215 * currentTemp - 35.75 * Math.pow(windSpeed, 0.16) + 0.4275 * currentTemp * Math.pow(windSpeed, 0.16);
-        }
-        document.getElementById("currentTemp").innerHTML = Math.round(currentTemp) + '&deg;F';
-        document.getElementById("currentDesc").innerHTML = currentDesc;
-        document.getElementById("windSpeed").innerHTML = windSpeed + ' mph';
-        document.getElementById("humidity").innerHTML = humidity + '%';
-        document.getElementById("high").innerHTML = Math.round(high) + '&deg;F';
-        if (windChill == 0) {
-            document.getElementById("windChill").innerHTML = 'N/A'
-        } else {
-            document.getElementById("windChill").innerHTML = Math.round(windChill) + '&deg;F';
-        }
-    });
+//  function getWeather()
+const apiWeatherURL = 'https://api.openweathermap.org/data/2.5/weather?id=5604473&appid=a4de96eb4c9cdd8c0998596fbb5ae04d&units=imperial';
+
+fetch(apiWeatherURL)
+    .then(
+        (response) => response.json()
+    )
+    .then(
+        (currentWeather) => {
+            //debugging console.log
+            // console.log(currentWeather.main.temp);
+
+            let currentTemp = currentWeather.main.temp;
+            let tempHigh = currentWeather.main.temp_max;
+            let windSpeed = currentWeather.wind.speed;
+            let windChill;
+
+            if (currentTemp <= 50 && windSpeed > 3) {
+                windChill = 35.74 + 0.6215 * currentTemp - 35.75 * Math.pow(windSpeed, 0.16) + .4275 * currentTemp * Math.pow(windSpeed, .16);
+            }
+
+            document.getElementById("currentTemp").innerHTML = currentTemp + "&deg;";
+            document.getElementById("tempHigh").innerHTML = tempHigh + "&deg;";
+            document.getElementById("windSpeed").innerHTML = windSpeed + " mph";
+            document.getElementById("windChill").innerHTML = windChill;
+
+            if (windChill === 0) {
+                document.getElementById("windChill").innerHTML = "N/A";
+            } else {
+                document.getElementById("windChill").innerHTML = Math.round(windChill) + "&deg;";
+            }
+
+        });

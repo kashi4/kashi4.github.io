@@ -9,16 +9,16 @@ fetch(requestURL)
                     console.table(temples);
 
                     temples.forEach(
-                        (temples, index) => {
-                            if (temples.name.toLowerCase() === 'Acrra Ghana Temple') {
+                        (temples, home) => {
+                            if (temples.name.toLowerCase() === 'accra ghana temple') {
                                 //accra Ghana Temple
                                 document.querySelector("#TempleName")
                                     .textContent = temples.TempleName;
 
-                                document.querySelector("#TempleLocation")
+                                document.querySelector("#AccraLocation")
                                     .textContent = temples.TempleLocation;
 
-                                document.querySelector("#TempleServices")
+                                document.querySelector("#AccraTempleServices")
                                     .textContent = temples.TempleServices;
 
                                 document.querySelector("#TempleTelephone")
