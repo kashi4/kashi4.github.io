@@ -1,4 +1,4 @@
-const requestURL = "https://raw.githubusercontent.com/kashi4/kashi4.github.io/master/templeProject/scripts/temples.json"
+const requestURL = "https://raw.githubusercontent.com/kashi4/kashi4.github.io/master/templeProject/scripts/temples.json";
 
 fetch(requestURL)
     .then(response => {
@@ -6,10 +6,9 @@ fetch(requestURL)
             .then(
                 response => {
                     const temples = response.temples;
-                    console.table(temples);
-
+                   
                     temples.forEach(
-                        (temples, home) => {
+                        (temples) => {
                             if (temples.name.toLowerCase() === 'accra ghana temple') {
                                 //accra Ghana Temple
                                 document.querySelector("#TempleName")
