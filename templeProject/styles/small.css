@@ -1,0 +1,324 @@
+
+*{
+    margin: 0;
+    padding: 0;
+
+}
+
+body{
+    background-image: url('/templeProject/images/African_LDS_Temples/Draper_LDS_Temple.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 700px;
+   
+}
+
+h1{
+    color: black;
+    padding: 20px;
+    text-align: center;
+    background: lightgrey;
+}
+
+.nav{
+    list-style: none;
+    display: -webkit-inline-flex;
+    width: 100%;
+    opacity: 0.9;
+}
+
+.nav li{
+    text-align: center;
+    height: 50px;
+    line-height: 50px;
+    background: lightgrey;
+    width: 273px;
+    border-top: 1px solid blue;
+    border-bottom: 1px solid blue;
+}
+
+.nav li a{
+    color:black ;
+    font-size: 24;
+    font-family: serif;
+    text-decoration: none;
+    background-color: none;
+    display: block;
+  
+      
+  
+  
+}
+
+.nav ul :after{
+    float: left;
+    display: block;
+    
+
+}
+
+.nav ul li{
+    float: left;
+    list-style: none;
+    text-decoration: none;
+    background-color: lightblue;
+    height: 50px;
+    width: 273px;
+    border: 1px solid blue;
+    text-align: center;
+
+}
+.sub-menu{
+    display: none;
+    position: absolute;
+}
+
+.nav li:hover .sub-menu{
+    display: block;
+}
+
+.nav ul ul{
+   display: block;
+}
+
+.nav ul li:hover > ul{
+    display: block;
+ }
+
+ .nav ul li:hover {
+    background: lightgreen  
+    transition: 0.9s;  
+}
+
+
+ .nav ul ul:hover {
+    color: white;
+ }
+
+ .nav ul ul {
+    background: lightgreen;
+    padding: 0;
+    margin: 0;
+    position: absolute;top:100%;
+ }
+ 
+ .nav ul li ul {
+     float: none;
+     position: relative;
+ }
+
+ .nav ul ul li a{
+     padding: 25px;
+     color:red;
+     width: 300px;
+     text-align: left;
+ }
+
+ .nav ul li a:hover{
+     background: olivedrab;
+     color: black;
+     transition: 0.9s;
+     background-color: olivedrab;
+     display: block;
+ }
+
+ ul li a:hover{
+    background-color: blue;
+    display: block;
+ }  
+.sub-menu li:hover .sub-menu{
+    display: block;
+}
+
+.active, .nav ul li:hover
+{
+    background: #2bab0d;
+    border-radius: 3px;
+}
+
+.nav .fa {
+    margin-right: 8px;
+}
+
+
+/* CALL TO ACTION BUTTON*/
+
+
+.section {
+  
+}
+
+// Max 568px ==> usage col_xs-*
+@media screen and (max-width: 35.5em) {
+  
+}
+
+// Max 768px ==> usage col_sm-*
+@media screen and (max-width: 48em) {
+  
+}
+
+// Max 1024px ==> usage col_md-*
+@media screen and (max-width: 64em) {
+  
+}
+
+// Max 1280px ==> usage col_lg-*
+@media screen and (max-width: 80em) {
+  
+}
+
+.section-wrap--md {
+    padding: 20px 0;
+}
+.section-wrap {
+    padding: 10px ;
+    overflow: hidden;
+    background-attachment: fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: 100px;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+.bg-light {
+    background-color:none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Montserrat", sans-serif;
+    margin-top: 0;
+    margin-bottom: 5x;
+    text-transform: uppercase;
+    color: #121212;
+    letter-spacing: 0.08em;
+    font-weight: 350;
+    line-height: 1.5;
+}
+
+.call-to-action__title {
+    font-size: 16px;
+}
+
+.call-to-action__dot {
+    color:blue;
+}
+
+.mt-40 {
+    margin-top: 40px;
+}
+
+.btn {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 350;
+    overflow: hidden;
+    display: inline-block;
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: center;
+    letter-spacing: 0.14em;
+    border-radius: 3px;
+    border: none;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -ms-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+    color: #fff;
+    background-color: #121212;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    position: relative;
+    z-index: 1;
+    white-space: nowrap;
+    vertical-align: middle;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.btn-lg, .btn-lg.btn-button {
+    font-size: 13px;
+    padding: 0 34px;
+    line-height: 46px;
+}
+
+.btn-color {
+    background-color: BLUE;
+}
+
+.btn-icon span {
+    position: relative;
+    display: inline-block;
+    left: 0;
+    -webkit-transition: left 0.2s ease-in-out, right 0.2s ease-in-out;
+    -moz-transition: left 0.2s ease-in-out, right 0.2s ease-in-out;
+    -ms-transition: left 0.2s ease-in-out, right 0.2s ease-in-out;
+    -o-transition: left 0.2s ease-in-out, right 0.2s ease-in-out;
+    transition: left 0.2s ease-in-out, right 0.2s ease-in-out;
+}
+
+.btn-icon > i {
+    position: absolute;
+    left: auto;
+    font-size: 18px;
+    width: 36px;
+    line-height: 46px;
+    background-color: rgba(0, 0, 0, 0.05);
+    right: -36px;
+    top: 0;
+    text-align: center;
+    display: block;
+    border-radius: 0 3px 3px 0;
+    -webkit-transition: left 0.2s ease-in-out, right 0.2s ease-in-out;
+    -moz-transition: left 0.2s ease-in-out, right 0.2s ease-in-out;
+    -ms-transition: left 0.2s ease-in-out, right 0.2s ease-in-out;
+    -o-transition: left 0.2s ease-in-out, right 0.2s ease-in-out;
+    transition: left 0.2s ease-in-out, right 0.2s ease-in-out;
+}
+
+.btn:hover {
+    color: #fff;
+    opacity: .9;
+    border-color: transparent;
+}
+
+.btn-icon:hover span {
+    left: -16px;
+}
+
+.btn-icon:hover i {
+    right: 0;
+}
+
+/* ----- Footer styles ----- */
+
+footer {
+    background-color:skyblue;
+    padding: 10px 0 10px 0;
+    text-align: center;
+  }
+  
+  footer span, footer p {
+    color: black;
+    text-align: center;
+    font-family: Heebo;
+  }
+  
+  .copyright {
+    max-width: 800px;
+    margin: 20px 0px;
+    margin: 0 auto;
+    border-top: black solid 2px;
+    padding: 20px 0px;
+    text-align: center;
+  }
+  
+  footer p {
+    margin: 5px 0px;
+    text-align: center;
+  }

@@ -1,32 +1,44 @@
-const requestURL = "https://byui-cit230.github.io/weather/data/towndata.json"
+const requestURL = "https://raw.githubusercontent.com/kashi4/kashi4.github.io/master/templeProject/scripts/temples.json"
 
 fetch(requestURL)
     .then(response => {
         response.json()
             .then(
                 response => {
-                    const towns = response.towns;
-                    console.table(towns);
+                    const temples = response.temples;
+                    console.table(temples);
 
-                    towns.forEach(
-                        (town, index) => {
-                            if (town.name.toLowerCase() === 'fish haven') {
-                                //fish haven
-                                document.querySelector("#fishYear")
-                                    .textContent = town.yearFounded;
+                    temples.forEach(
+                        (temples, index) => {
+                            if (temples.name.toLowerCase() === 'Acrra Ghana Temple') {
+                                //accra Ghana Temple
+                                document.querySelector("#TempleName")
+                                    .textContent = temples.TempleName;
 
-                                document.querySelector("#fishMotto")
-                                    .textContent = town.motto;
+                                document.querySelector("#TempleLocation")
+                                    .textContent = temples.TempleLocation;
 
-                                document.querySelector("#fishPop")
-                                    .textContent = town.currentPopulation;
+                                document.querySelector("#TempleServices")
+                                    .textContent = temples.TempleServices;
 
-                                document.querySelector("#fishRain")
-                                    .textContent = town.averageRainfall;
+                                document.querySelector("#TempleTelephone")
+                                    .textContent = temples.TempleTelephone;
+                                
+                                document.querySelector("#TempleOrdinacesSchedule")
+                                    .textContent = temples.TempleOrdinacesSchedule;
+                            
+                                document.querySelector("#TempleSessionSchedule")
+                                    .textContent = temples.TempleSessionSchedule;
+                                 
+                                document.querySelector("#TempleClosureSchedule")
+                                    .textContent = temples.TempleClosureSchedule; 
+                                    
+                                document.querySelector("#TempleHistory")
+                                    .textContent = temples.TempleHistory; 
 
-                                document.querySelector("#fishImage")
-                                    .setAttribute('src', 'images/' + town.photo);
-                            } else if (town.name.toLowerCase() === 'preston') {
+                                document.querySelector("#AccraImage")
+                                    .setAttribute('src', 'images/' + temples.photo);
+                            } else if (town.name.toLowerCase() === 'Democratic Republic of the Congo Temple') {
                                 //preston
                                 document.querySelector("#prestonYear")
                                     .textContent = town.yearFounded;
@@ -42,7 +54,7 @@ fetch(requestURL)
 
                                 document.querySelector("#prestonImage")
                                     .setAttribute('src', 'images/' + town.photo);
-                            } else if (town.name.toLowerCase() === 'soda springs') {
+                            } else if (town.name.toLowerCase() === 'South Afrca Johannesburg Temple') {
                                 //soda springs
                                 document.querySelector("#sodaYear")
                                     .textContent = town.yearFounded;
