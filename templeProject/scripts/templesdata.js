@@ -1,17 +1,17 @@
-const requestURL = "https://raw.githubusercontent.com/kashi4/kashi4.github.io/master/templeProject/scripts/temples.json";
+const requestURL = 'https://raw.githubusercontent.com/kashi4/kashi4.github.io/master/templeProject/scripts/temples.json';
 
 fetch(requestURL)
     .then(response => {
         response.json()
             .then(
                 response => {
-                    const temples = response.temples;
-                   
+                   const temples = response.temples;
                     temples.forEach(
                         (temples) => {
-                            if (temples.name.toLowerCase() === 'accra ghana temple') {
+                        
+                            if (temples.name.toLowerCase() === 'accra ghana') {
                                 //accra Ghana Temple
-                                document.querySelector("#TempleName")
+                                document.querySelector("#accraGhanaTempleName")
                                     .textContent = temples.TempleName;
 
                                 document.querySelector("#AccraLocation")
