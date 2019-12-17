@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5">
+    <title>Hotel|Temple Inn & Suites|</title>
+    <meta name="description" content="Temple Inn & Suites is an owner-operated company that provides
+    accommodations and specialized services to temple workers, patrons, and their families.">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Gupter&display=swap">  
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+
+<body id="homepage">
+    <header>
+        <img id="logo" src="images/suits_logo.png" alt="LDS Temple Logo">
+        <div class="heading">
+            <h1>Temple Inn & Suites</h1>
+            <div class="motto">"Affordable luxury,Where heaven meets Earth"</div>
+        </div>
+
+    </header>
+    <nav>
+        <button id="hamBtn">&equiv;</button>
+        <ul id="menu">
+            <li> <a href="home.html"><i class="fa fa-home"></i>Home</a></li>
+            <li><a href="temples.html"><i class="fa fa-bed"></i>Temples</a></li>
+            <li><a href="reservation.html"><i class="fa fa-address-card"></i>Reservation</a></li>
+            <li><a href="services.html"><i class="fa fa-clone"></i>Services</a></li>
+            <li><a href="#" class="active"><i class="fa fa-phone"></i>Contact</a></li>
+              
+        </ul>
+
+    </nav>
+    <main class="contact">
+        <div>
+            <div class="mapouter">
+                <div class="gmap_canvas">
+                    <iframe id="gmap_canvas" src="https://maps.google.com/maps?q=4810%20Montgomery%20Ln%20%20Bethesda%2C%20MD%2020814&t=&z=15&ie=UTF8&iwloc=&output=embed">
+                    </iframe> <a href="https://www.pureblack.de/webdesign-darmstadt/"></a>
+                </div>
+            </div>
+
+        </div>
+
+
+        <div class="contactInfo" id="contactInfo">
+            <h4>Contact Information</h4>
+            <p>Temple Inn & Suites<br>
+                4810 Montgomery Ln #500<br>
+                Bethesda, MD 20814</p>
+        </div>
+        <div id="contactUs">
+            <form action="thankyou.html">
+                <fieldset>
+                    <label class="top">First Name*<input type="text" id="fname" name="firstname" placeholder="Julius" required></label>
+                    <label class="top">Last Name*<input type="text" id="lname" name="lastname" placeholder="Kashihakumwa" required></label>
+                    <label class="top">email*<input type="email" id="email" name="email" placeholder="elderkash@yahoo.com" required></label>
+                    <label class="top">Message<textarea rows="20" cols="75" placeholder="Your Message. .."></textarea></label>
+                    <input class="submitBtn" type="submit" value="Send Your Message">
+                </fieldset>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <div id="date"></div>
+        <p class="citation">&COPY;2019 &verbar;Julius Kashihakumwa&verbar;Temple Inn & Suites &verbar;<a href="contacts.html">Contacts</a></p>
+    </footer>
+    <script src="scripts/menu.js"></script>
+    <script src="scripts/currentdate.js"></script>
+    <script src="scripts/templeactivities.js"></script>
+
+</body>
+
+</html>

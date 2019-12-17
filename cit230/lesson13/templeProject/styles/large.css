@@ -1,0 +1,233 @@
+/* styles for header */
+@media only screen and (min-width: 770px){
+    #header {
+        display:grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 75px 1fr 1fr 1fr;
+        grid-template-areas: 'header header header'
+                            'nav nav nav'
+                            'main main main'
+                            'main main main'
+                            'footer footer footer';
+    }
+    header {
+        grid-template-columns: 200px 2fr;
+        grid-template-rows: 1fr;
+        height: 250px;
+        margin-bottom: 0;
+    }
+    .heading {
+        
+        margin-top: 1em;
+        
+    }
+    h1 {
+        margin-bottom: .25em;
+        margin-top: .25em;
+        font-size: 4em;
+    }
+    .motto {
+        font-size: 1.5em;
+        
+    }
+    #logo {
+        justify-self: right;
+        align-self: start;
+        margin-top: 1em;
+    }
+    nav {
+        background-color: blue;
+        text-align: center;
+        margin: 0;
+        
+    }
+    #menuBtn {
+        visibility: hidden;
+    }
+    #menu {
+        display: inline-block;
+        margin: 0;
+        padding: 0;
+        box-shadow: none;
+        background-color: transparent;
+        position: relative;
+     
+    }
+    nav li {
+        float: left;
+        margin: 0;
+    }
+  
+    /*index*/
+
+    main.index {
+        grid-area: main;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+    .hero {
+        grid-column-start: 1;
+        grid-column-end: 4;
+        grid-row-start: 1;
+        grid-row-end: 3;
+        justify-self: center;
+    }
+    .hero {
+        max-width: 800px;
+        padding-right: 15px;
+    }
+    .templeActivities, .templeSummary, .contactInfo {
+        max-width: 250px;
+    }
+    .hero h3, .templeActivities h3, .templeSummary h3, .contactInfo h3 {
+        font-size: 2em;
+        text-align: left;
+        padding-left: 25px;
+    }
+    .heroimage {
+        max-width: 700px;
+        margin-left: 50px;
+    }
+    .activityImage, .portlandHome {
+        max-width: 200px;
+        margin-left: 20px;
+    }
+   #activities {
+       margin-left: 5px;
+       font-size: 1.3em;
+       padding-left: 20px;
+       
+       }
+    .summary {
+        margin-left: 5px;
+        font-size: 1.3em;
+        padding-left: 5px;
+    }   
+    .testLink {
+        max-width: 500px;
+        margin-left: 150px;
+    }
+    .contactMap {
+        visibility: visible;
+        max-width: 200px;
+        margin-left: 20px;
+        margin-top: 100px;
+    }
+   .contactInfo {
+       margin-left: 10px;
+       border: 2px solid rgb(130, 145, 145);
+       border-radius: 10px;
+       font-size: 1em;
+       width: 95vw;
+       padding: 5px;
+       justify-self: center;
+       margin-top: 5px;
+   }
+   /*form styles*/
+form fieldset {
+    max-width: 800px;
+    margin-top: 10px;
+}
+form label.top input, form label.top select, form label.sbs {
+    width: 750px;    
+}
+form textarea {
+    width: 750px;  
+}
+form input.submitBtn {
+    width: 700px;  
+    margin-left: 50px;  
+}
+/*services page*/
+main.serviceMain {
+    grid-area: main;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+  
+}
+.receptionservices {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    justify-self: center;
+    max-width: 800px;
+}
+.servicesMain h2 {
+    margin-top: 60px;
+}
+.receptionservices h4 {
+    text-align: center;
+}
+.receptionservices p {
+    margin-left: 40px;
+    margin-right: 40px;
+}
+.amenities, .specialservices, .templemission {
+    max-width: 250px;
+    margin-top: 5px;
+}
+.specialservices, .templemission {
+    margin-left: 5px;
+}
+.servicesImage {
+    margin-left: 30px;
+}
+#bouquet {
+    width: 700px;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-top: 60px;
+}
+#caterImage {
+    visibility: hidden;
+}
+/*contact page*/
+
+#contactInfo {
+    max-width: 800px;
+    
+}
+#contactUs {
+    max-width: 800px;
+}
+.mapouter {
+    width: 600px;
+    height: 600px;
+    margin-left: 100px;
+}
+iframe {
+    width: 600px;
+    height: 600px;
+}
+.gmap_canvas {
+    width: 600px;
+    height: 600px;
+}
+/*Thank you page*/
+main.thankyou p {
+    max-width: 800px;
+}
+/*temple page*/
+#accra, #congo, #aba, #joburg {
+    max-width: 800px;
+}
+.templeImage {
+    max-width: 750px;
+    margin-left: 20px;
+}
+#accraWeather, #congoWeather, #abaWeather, #joburgWeather {
+    max-width: 300px;
+    margin-left: 200px;
+    margin-right: 200px;
+}
+   /*footer styles*/
+
+   footer {
+       grid-area: footer;
+       max-width: 850px;
+   }
+  
+}

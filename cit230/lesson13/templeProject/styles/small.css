@@ -1,0 +1,367 @@
+html, body {
+    width: 95vw;
+    height: 95vh;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Gupter', serif;
+    font-size: 18px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 300px 50px 1fr 1fr;
+    grid-template-areas: 'header'
+                        'nav'
+                        'main'
+                        'footer';
+    margin: 0;
+    width: 100vw;
+    
+
+}
+/* styles for header */
+header {
+    grid-area: header;
+    display: grid;
+    grid-template-columns: 1fr;
+    background-color: blue;  
+    width: 100vw; 
+    justify-self: center;
+}
+h1 {
+    margin-top: .25em;
+    margin-bottom: .25em;
+}
+#logo {
+    align-self: center;
+    justify-self: center;
+    margin: .25em;
+    padding: 0;
+}
+.heading {
+    font-family: 'Clicker Script', cursive;
+    text-align: center;
+    color: rgb(244, 244, 244);
+    font-size: 1.25em;
+    margin: 0;
+}
+.motto {
+    
+    color: rgb(244, 244, 244);
+    font-size: .5em;
+    margin: 0;
+}
+
+/*styling the nav*/
+
+nav {
+    grid-area: nav;
+    background-color:blue;
+    width: 100vw;
+    position: relative;
+    display: inline-block;
+    justify-self: center;
+}
+#menuBtn {
+    background-color: blue;
+    color: rgb(244, 244, 244);
+    padding: .5em;
+    height: 50px;
+    cursor: pointer;
+}
+#menuBtn:hover, #menuBtn:focus {
+    background-color:grey;
+}
+
+#menu {
+    display: none;
+    position: absolute;
+    background-color: blue;
+    min-width: 150px;
+    box-shadow: 0px 5px 10px 0px blue;
+    
+}
+
+#menu a {
+    color: rgb(244, 244, 244);
+    text-decoration: none;
+    padding: .5em;
+    margin: .5em;
+    display: block;
+    
+}
+a:hover {
+    background-color: black;
+}
+a.active {
+    background-color:black;
+}
+#menu a:hover {
+    color:blue;
+}
+ul {
+    list-style:none;
+}
+/*This will style the body*/
+
+main {
+    grid-area: main;
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-self: center;
+}
+/*Index Page*/
+
+.hero {
+    border: 2px solid blue;
+    border-radius: 10px;
+    width: 95vw;
+    padding: 5px;
+    justify-self: center;
+    margin-top: 5px;
+}
+.heroimage {
+   width: 90vw;
+   padding: 5px;  
+}
+.testLink {
+    background-color: blue;
+    font-size: 1em;
+    width: 85vw;
+    color: rgb(244, 244, 244);
+    text-align: center;
+    text-decoration: none;
+    border-radius: 20px;
+    padding: 10px;
+    margin: 5px;
+    display: inline-block;
+    justify-self: right;
+}
+.templeActivities {
+    border: 2px solid rgb(130, 145, 145);
+    border-radius: 10px;
+    width: 95vw;
+    padding: 5px;
+    justify-self: center;
+    margin-top: 5px;
+}
+.templeActivities h3, .templeSummary h3  {
+    text-align: center;
+    color: rgb(92, 105, 111);
+}
+.templeActivities ul {
+    text-align: left;
+    color: rgb(114, 110, 96);
+}
+.activityImage {
+    width: 90vw;
+    padding: 5px;
+}
+.templeSummary {
+    border: 2px solid rgb(130, 145, 145);
+    border-radius: 10px;
+    width: 95vw;
+    padding: 5px;
+    justify-self: center;
+    margin-top: 5px;
+}
+.templeSummary p {
+    text-align: center;
+    color:blue;
+}
+.templeSummary a {
+    text-decoration: none;
+}
+.templeSummary a:hover {
+    color: rgb(244, 244, 244);
+}
+.joburgHome {
+    width: 90vw;
+    padding: 5px;
+}
+.contactMap {
+    visibility: hidden;
+}
+.contactInfo h3 {
+    color:blue;
+    padding: 5px;
+}
+.contactInfo p {
+    color: lightblue;
+    padding: 5px;
+}
+.contactInfo a {
+    padding: 10px;
+}
+/*form styles*/
+form fieldset {
+    border: 2px solid lightblue;
+    border-radius: 15px;
+    margin: auto;
+}
+.formh2 {
+    text-align: center;
+    color: rgb(92, 105, 111);
+}
+.formtitle {
+    color:blue;
+    margin-left: 10px;
+}
+input.num {
+    width: 20px;
+}
+form label.top input, form label.top select, form label.sbs {
+    width: 95%;  
+    padding: 10px;
+    
+}
+form textarea {
+    width: 90%;
+    padding-left: 1.5rem;
+}
+form input.submitBtn {
+    width: 96%;
+    border-radius:  10px;
+    background-color:blue;
+    color: rgb(244, 244, 244);
+    margin-left: 10px;
+}
+form label.top input:required {
+    border: solid 4px blue;
+}
+form label.top input:required:valid {
+    border: none;
+}
+/*form thank you page styles*/
+.booked {
+    color:blue;
+    margin: 10px;
+}
+/*Services Page*/
+
+.amenities, .specialservices, .receptionservices, .templemission {
+    border: 2px solid blue;
+    border-radius: 10px;
+    width: 95vw;
+    padding: 5px;
+    justify-self: center;
+    margin-top: 5px;
+}
+.servicesImage {
+    width: 200px;
+    border: 2px solid blue);
+    margin-left: 50px;
+}
+#serviceMain p {
+    padding: 5px;
+}
+#serviceMain ul li {
+    margin-right: 10px;
+}
+#serviceMain {
+    color: blue;
+}
+#serviceMain h2 {
+    color: blue;
+    text-align: center;
+}
+#serviceMain h4 {
+    padding: 10px;
+}
+
+
+/*contact page styles*/
+iframe {
+    width: 300px;
+    height: 300px;
+}
+.mapouter {
+    text-align: right;
+    height: 300px;
+    width: 300px;
+    margin: 35px;
+}
+.gmap_canvas {
+    overflow: hidden;
+    background: none;
+    height: 300px;
+    width: 300px;
+}
+#contactInfo {
+    margin-left: 10px;
+}
+#contactUs {
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 5px;
+}
+/* temple page*/
+
+#joburWeather, #accraWeather, #congoRiverWeather, #abaWeather {
+    background-color: blue);
+    width: 75vw;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+.temples h3 {
+    color:blue;
+    text-align: center;
+    padding-top: 10px;
+}
+.weatherdetails {
+    font-size: 1rem;
+    padding-left: 20px;
+    display: inline-block;
+}
+
+.label {
+    display:inline-block;
+    padding-left: 20px;
+    width: 100px;
+    margin-top: 0px;
+}
+
+.value {
+    display:inline-block;
+    left: 150px;
+    width: 100px; 
+    margin-top: 0px;   
+}
+.templeImage {
+    width: 85vw;
+    margin-top: 10px;
+    margin-left: 5px;
+    border: 2px solid blue;   
+}
+#joburWeather, #accraWeather, #congoRiverWeather, #abaWeather {
+    border: 2px solid blue;
+    border-radius: 10px;
+    width: 90vw;
+    padding: 5px;
+    justify-self: center;
+    margin-top: 5px;
+}
+/*footer styles*/
+
+footer {
+    grid-area: footer;
+    display: grid;
+    grid-template-rows: .5fr 1fr;
+    width: 100%;
+    height: 100px;
+    margin: auto;
+    margin-top: 1rem;
+    padding-top: 15px;
+    text-align: center;
+    background-color: blue;
+    font-size: .8em;
+    
+}
+footer a {
+    color: lightblue;
+    text-decoration: none;
+}
+footer a:hover {
+    background-color: rgb(114,110,96);
+}

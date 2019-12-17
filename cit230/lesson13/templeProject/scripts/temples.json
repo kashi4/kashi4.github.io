@@ -1,0 +1,158 @@
+{
+	"temples": [{
+			"name": "Accra Ghana Temple",
+			"location": "Accra Ghana ",
+			"services": [
+				"No clothing rental available",
+				"No cafeteria available",
+				"Patron housing available",
+				"Distribution center nearby"
+			],
+			"telephone": "(233)302-650-123",
+			"ordinacesSchedule": [
+				"Baptisms",
+				"Confirmations",
+				"Endowments",
+				"Sealings"
+			],
+			"sessionSchedule": "7:00 AM - 12:00 PM",
+			"closureSchedule": [
+				"Wednesday, 1 January 2020",
+				"Monday, 17 February 2020 - Monday , 2 March 2020",
+				"Friday, 6 March 2020",
+				"Wednesday, 1 July 2020",
+				"Monday, 7 September 2020 - Monday , 9 November 2020",
+				"Friday, 25 December 2020 - Saturday , 26 December 2020"
+			],
+			"history": [
+				"Announced",
+				"16 February 1998",
+				"Groundbreaking",
+				"16 November 2001",
+				"Dedicated",
+				"11 January 2004"
+			]
+		},
+		{
+			"name": "Kinshasa Democratic Republic of the Congo Temple",
+			"location": "Kinshasa Congo",
+			"services": [
+				"No clothing rental available",
+				"No cafeteria available",
+				"Patron housing available",
+				"Distribution center nearby"
+			],
+			"telephone": "(243)815-590-060",
+			"ordinacesSchedule": [
+				"Baptisms",
+				"Confirmations",
+				"Endowments",
+				"Sealings"
+			],
+			"sessionSchedule": "7:30 AM - 12:00 PM",
+			"closureSchedule": [
+				"Wednesday, 25 December 2019",
+				"Saturday, 4 January 2020",
+				"Thursday, 16 January 2020 - Friday, 17 January 2020",
+				"Monday,30 March 2020 - Monday, 13 April 2020",
+				"Friday, 1 May 2020",
+				"Tuesday, 30 June 2020",
+				"Saturday, 1 August 2020",
+				"Monday, 19 October 2020 - Monday, 2 November 2020",
+				"Friday, 25 December 2020"
+			],
+			"history": [
+				"Announced",
+				"1 October 2011",
+				"Groundbreaking",
+				"12 February 2016",
+				"Dedicated",
+				"14 April 2019"
+			]
+		},
+		{
+			"name": "Johannesburg South Africa Temple",
+			"location": "Johannesburg South Africa ",
+			"services": [
+				"No clothing rental available",
+				"No cafeteria available",
+				"Patron housing available",
+				"Distribution center nearby"
+			],
+			"telephone": "(27)11-645-1540",
+			"ordinacesSchedule": [
+				"Baptisms",
+				"Confirmations",
+				"Endowments",
+				"Sealings"
+			],
+			"sessionSchedule": "6:30 AM - 8:00 PM",
+			"closureSchedule": [
+				"Tuesday, 24 December 2019 (Limited Hours)",
+				"Wednesday, 25 December 2019 (Limited Hours)",
+				"Thursday, 26 December 2019 (Limited Hours)",
+				"Tuesday, 31 December 2019 (Limited Hours)",
+				"Wednesday, 1 January 2020(Limited Hours)",
+				"Monday, 10 February 2020 - Monday, 24 February 2020",
+				"Saturday, 21 March 2020 (Limited Hours)",
+				"Friday, 10 April 2020 (Limited Hours)",
+				"Saturday, 11 April 2020 (Limited Hours)",
+				"Friday, 1 May 2020 (Limited Hours)",
+				"Tuesday, 16 June 2020 (Limited Hours)",
+				"Monday, 27 July 2020 - Monday, 28 September 2020",
+				"Thursday, 24 September 2020 (Limited Hours)",
+				"Saturday, 10 October 2020 (Limited Hours)",
+				"Wednesday, 16 December 2020 (Limited Hours)",
+				"Thursday, 24 December 2020 (Limited Hours)",
+				"Friday, 25 December 2020 (Limited Hours)",
+				"Saturday, 26 December 2020 (Limited Hours)",
+				"Thursday, 31 December 2020 (Limited Hours)"
+			],
+			"history": [
+				"Announced",
+				"1 April 1981",
+				"Groundbreaking",
+				"27 November 1982",
+				"Dedicated",
+				"24 August 1985"
+			]
+		},
+		{
+			"name": "Aba Nigeria Temple",
+			"location": "Aba Nigeria ",
+			"services": [
+				"No clothing rental available",
+				"No cafeteria available",
+				"Patron housing available",
+				"Distribution center nearby"
+			],
+			"telephone": "(234) 80-3903-4804",
+			"ordinacesSchedule": [
+				"Baptisms",
+				"Confirmations",
+				"Endowments",
+				"Sealings"
+			],
+			"sessionSchedule": "6:30 AM - 8:00 PM",
+			"closureSchedule": [
+				"Tuesday, 24 December 2019",
+				"Thursday, 26 December 2019",
+				"Monday, 2 March 2020",
+				" Monday, 16 March 2020",
+				"Saturday, 15 August 2020",
+				"Monday, 7 September 2020",
+				"Monday, 21 September 2020",
+				"Thursday, 24 December 2020",
+				"Saturday, 26 December 2020"
+			],
+			"history": [
+				"Announced",
+				"2 April 2000",
+				"Groundbreaking",
+				"23 February 2002",
+				"Dedicated",
+				"7 August 2005"
+			]
+		}
+	]
+}
