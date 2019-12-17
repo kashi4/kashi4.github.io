@@ -35,7 +35,7 @@
     nav {
         grid-area: nav;
         width: auto;
-        background-color: rgb(68, 43, 72);
+        background-color: blue;
         margin: 0;
     }
         

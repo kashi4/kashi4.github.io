@@ -57,7 +57,7 @@ h1 {
 
 nav {
     grid-area: nav;
-    background-color:green;
+    background-color:blue;
     width: 100vw;
     position: relative;
     display: inline-block;
