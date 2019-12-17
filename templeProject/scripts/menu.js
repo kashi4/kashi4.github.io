@@ -1,3 +1,6 @@
-function toggleMenu() {
-	document.getElementsByClassName("navigation")[0].classList.toggle("responsive");
-}
+$(function(){
+    $("#menuBtn").click(function() {
+        $("#menu").slideToggle(200);
+      }); 
+});
+ 

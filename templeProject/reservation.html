@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5">
+    <title>Hotel|Temple Inn & Suites|</title>
+    <meta name="description" content="Temple Inn & Suites is an owner-operated company that provides
+    accommodations and specialized services to temple workers, patrons, and their families.">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <link href="https://fonts.googleapis.com/css?family=Gupter&display=swap">  
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+
+<body id="homepage">
+    <header>
+        <img id="logo" src="images/suits_logo.png" alt="LDS Temple Logo">
+        <div class="heading">
+            <h1>Temple Inn & Suites</h1>
+            <div class="motto">"Affordable luxury,Where heaven meets Earth"</div>
+        </div>
+
+    </header>
+    <nav>
+        <button id="hamBtn">&equiv;</button>
+        <ul id="menu">
+            <li> <a href="#" class="active"><i class="fa fa-home"></i>Home</a></li>
+            <li><a href="temples.html"><i class="fa fa-bed"></i> Temples</a></li>
+            <li><a href="#" class="active">Reservation</a></li>
+            <li><a href="services.html"><i class="fa fa-clone"></i>Services</a></li>
+            <li><a href="contacts.html"><i class="fa fa-phone"></i>Contact</a></li>
+        </ul>
+
+    </nav>
+    <main id="reservation">
+        <h2 class="formh2">Temple Inn & Suites Reservations</h2>
+        <h3 class="formtitle">Schedule Your Trip</h3>
+        <form method="get" action="booked.html">
+            <fieldset class="room">
+                <legend class="roomdetails">Room Details</legend>
+                <label class="top">Destination*<input list="locations" name="location" placeholder="Select" required>
+                    <datalist id="locations">
+                        <option value="Accra Temple"></option>
+                        <option value="Congo Temple"></option>
+                        <option value="Aba Temple"></option>
+                        <option value="Joburg Temple"></option>
+                    </datalist>
+                </label>
+                <label class="top">Check-in Date*<input type="date" name="datein" required></label>
+                <label class="top">Check-out Date*<input type="date" name="dateout" required></label>
+                <label class="top">Number of Guests: Adults*<input type="text" class="num" required></label>
+                <label>Children<input type="text" class="num"></label>
+                <label class="sbs">Type of Room:
+                    <input type="radio" name="suite" value="suite">Full-time Missionary Suite
+                </label>
+                <label>
+                    <input type="radio" name="King" value="1King">1 King Bed
+                </label>
+                <label>
+                    <input type="radio" name="Queen" value="1Queen">1 Queen Bed
+                </label>
+                <label>
+                    <input type="radio" name="Queens" value="2Queen">2 Queen Beds</label>
+                <label>How Many Rooms<input type="text" class="num">
+                </label>
+            </fieldset>
+            <fieldset class="personalInfo">
+                <legend class="contactinfo">Contact Information</legend>
+                <label class="top">First Name*<input type="text" name="firstname" placeholder="Julius" required></label>
+                <label class="top">Last Name*<input type="text" name="lastname" placeholder="Kashihakumwa" required></label>
+                <label class="top">Email<input type="email" name="email" placeholder="elderkash@yahoo.com"></label>
+                <label class="top">Phone Number<input type="tel" name="phone" placeholder="208-600-7159" required></label><br>
+                <label class="top">Address Line 1*<input type="text" name="address1" required></label>
+                <label class="top">Address Line2<input type="text" name="address2"></label>
+                <label class="top">City*<input type="text" name="city" required></label>
+                <label class="top">Country*<input list="countries" name="country" placeholder="select" required>
+                    <datalist id="states">
+                        <option value="CD">DR Congo</option>
+                        <option value="CM">Cameroon</option>
+                        <option value="EG">Egypt</option>
+                        <option value="GH">Ghana</option>
+                        <option value="NA">Namibia</option>
+                        <option value="NG">Nigeria</option>
+                        <option value="KE">Kenya</option>
+                        <option value="SE">Senegal</option>
+                        <option value="ZM">Zimbabwe</option>
+                    </datalist>
+                </label>
+                <label class="top">Country<input type="text" name="country"></label>
+            </fieldset>
+            <fieldset>
+                <legend>Additional Information or Comments</legend>
+                <label class="top">
+                    <textarea rows="20" cols="75"></textarea>
+                </label>
+            </fieldset>
+            <fieldset>
+                <input class="submitBtn" type="submit" value="Book Your Reservation">
+            </fieldset>
+
+        </form>
+    </main>
+    <footer>
+        <div id="date"></div>
+        <p class="citation">&COPY;2019 &verbar;Julius Kashihakumwa &verbar;Temple Inn & Suites &verbar;<a href="reservation.html">Reservations</a></p>
+    </footer>
+    <script src="scripts/menu.js"></script>
+    <script src="scripts/currentdate.js"></script>
+</body>
+
+</html>

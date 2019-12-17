@@ -1,206 +1,99 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-US">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Temple & Inn Suits</title>
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
-  <link rel="stylesheet" href="styles/normalize.css">
-  <link rel="stylesheet" href="styles/small.css">
- </head>
-<body>
-  <header>
-    <img src="images/Temple_InnSuit_Logo.png" alt="logo">
-    <h1>Temple Inn & Suites</h1>
-            <ul>
-              <li><a href="#" onclick="toggleMenu()">&#9776; Menu</a></li>
-              <li class="active"><a href="temples.html"><i class="fa fa-home"></i>Home</a></li>
-              <li><a href="/templeProject/temples.html"><i class="fa fa-bed"></i>Temples</a></li>
-              <li><a href="/templeProject/reservation.html"><i class="fa fa-address-card"></i>Reservation</a></li>
-              <li><a href="/templeProject/services.html"><i class="fa fa-clone"></i>Services</a>
-                <ul>
-                  <li><a href="/templeProject/services.html"><i class="fa fa-inr"></i>Reception</a></li>
-                  <li><a href="/templeProject/services.html"><i class="fa fa-id-badge"></i>Full Time Missionary</a></li>
-                </ul/li>
-              <li><a href="/templeProject/contacts.html"><i class="fa fa-phone"></i>Contacts</a></li>
-         </ul>
-          
-  </header>
-  <body>
-    <div class="img-container">
-      <div class="inner-container">
-        <h1>Claim/Donate your discount</h1>
-        <h2>Affordable Luxury</h2>
-        <a class="btn" href="#">CLICK HERE</a>
-      </div>
-    </div>
-  </body>
-     <main>
-       <section class="grid">
-            
-              <article>
-                  <h1>Accra Ghana Temple</h1>
-                  <h2 id="accraGhanaTempleName"></h2>
-                  <p>
-                    Temple Location:
-                    <span id="accraTempleLocation"></span>
-                </p>
-                <p>
-                    Temple Services:
-                    <span id="accraTempleServices"></span>
-                </p>
-                <p>
-                    Temple Telephone:
-                    <span id="accraTempleTelephone"></span>
-                </p>
-                <p>
-                  Temple Ordinaces Schedule:
-                  <span id="accraTempleOrdinaceShedule"></span>
-                </p>
-                <p>
-                   Temple Session Schedule:
-                <span id="accraTempleSessionSchedule"></span>
-                </p>
-                <p>
-                   Temple Closure Schedule:
-               <span id="accraTempleClosureSchedule"></span>
-               </p>
-               <p>
-                    Temple History:
-                <span id="accraTempleTelephone"></span>
-               </p>
-                  <p>
-                      <img src="/templeProject/images/accra_ghana_temple1.jpg" alt="accra" id="accraImage">
-                  </p>
-              </article>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5">
+    <title>Hotel|Temple Inn & Suites|</title>
+    <meta name="description" content="Temple Inn & Suites is an owner-operated company that provides
+    accommodations and specialized services to temple workers, patrons, and their families.">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <link href="https://fonts.googleapis.com/css?family=Gupter&display=swap">  
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
 
-              <article>
-                  <h1>Kinshasa Democratic Republic of the Congo Temple</h1>
-                  <p>
-                    Temple Location:
-                    <span id="congoTempleLocation"></span>
-                </p>
-                <p>
-                    Temple Services:
-                    <span id="congoTempleServices"></span>
-                </p>
-                <p>
-                    Temple Telephone:
-                    <span id="congoTempleTelephone"></span>
-                </p>
-                <p>
-                  Temple Ordinaces Schedule:
-                  <span id="congoTempleOrdinaceShedule"></span>
-                </p>
-                <p>
-                   Temple Session Schedule:
-                <span id="congoTempleSessionSchedule"></span>
-                </p>
-                <p>
-                   Temple Closure Schedule:
-               <span id="congoTempleClosureSchedule"></span>
-               </p>
-               <p>
-                    Temple History:
-                <span id="congoTempleTelephone"></span>
-               </p>
-                  <p>
-                      <img src="/templeProject/images/kinshasa_temple3.jpg" alt="congo" id="congoImage">
-                  </p>
-              </article>
-
-              <article>
-                  <h1>Johannesburg South Africa Temple</h1>
-                  <h2 id="TempleName"></h2>
-                  <p>
-                      Temple Location:
-                      <span id="joburgTempleLocation"></span>
-                  </p>
-                  <p>
-                      Temple Services:
-                      <span id="joburgTempleServices"></span>
-                  </p>
-                  <p>
-                      Temple Telephone:
-                      <span id="joburgTempleTelephone"></span>
-                  </p>
-                  <p>
-                    Temple Ordinaces Schedule:
-                    <span id="joburgTempleOrdinaceShedule"></span>
-                  </p>
-                  <p>
-                     Temple Session Schedule:
-                  <span id="joburgTempleSessionSchedule"></span>
-                  </p>
-                  <p>
-                     Temple Closure Schedule:
-                 <span id="joburgTempleClosureSchedule"></span>
-                 </p>
-                 <p>
-                      Temple History:
-                  <span id="joburgTempleTelephone"></span>
-                 </p>
-                  <p>
-                      <img src="/templeProject/images/johannesburg_south_africa_temple2.jpg" alt="joburg" id="johannesburgImage">
-                  </p>
-              </article>
-
-              
-              <article>
-                <h1>Aba Nigeria Temple</h1>
-                <h2 id="TempleName"></h2>
-                <p>
-                    Temple Location:
-                    <span id="abaTempleLocation"></span>
-                </p>
-                <p>
-                    Temple Services:
-                    <span id="abaTempleServices"></span>
-                </p>
-                <p>
-                    Temple Telephone:
-                    <span id="abaTempleTelephone"></span>
-                </p>
-                <p>
-                  Temple Ordinaces Schedule:
-                  <span id="abaTempleOrdinaceShedule"></span>
-                </p>
-                <p>
-                   Temple Session Schedule:
-                <span id="abaTempleSessionSchedule"></span>
-                </p>
-                <p>
-                   Temple Closure Schedule:
-               <span id="abaTempleClosureSchedule"></span>
-               </p>
-               <p>
-                    Temple History:
-                <span id="abaTempleTelephone"></span>
-               </p>
-                <p>
-                    <img src="/templeProject/images/African_LDS_Temples/aba_nigeria_temple_lds.jpg" alt="" id="abaImage">
-                </p>
-            </article>
-              
-          </section>
-
-      </main>
-      <div class="img-container">
-        <div class="inner-container">
-          <h1></h1>
+<body id="homepage">
+    <header>
+        <img id="logo" src="images/suits_logo.png" alt="LDS Temple Logo">
+        <div class="heading">
+            <h1>Temple Inn & Suites</h1>
+            <div class="motto">"Affordable luxury,Where heaven meets Earth"</div>
         </div>
-      </div>
-        &copy; <span id="currentDate"></span> &star; Temple Inn & Suites &star; Julius Kashihakumwa &star; <a
-          href="http://www.byui.edu" target="_blank">BYU-Idaho</a>
-      </footer>
-    </body>
-  <script src="scripts/menu.js"></script>
-  <script src="scripts/main.js"></script>
-  <script src="scripts/templesdata.js"></script>
-  <script src="scripts/temples.json"></script>
-  
-</body>>
+
+    </header>
+    <nav>
+        <button id="hamBtn">&equiv;</button>
+        <ul id="menu">
+          <li><a href="#" class="active">Home</a></li>
+            <li><a href="temples.html"><i class="fa fa-bed"></i> Temples</a></li>
+            <li><a href="reservation.html"><i class="fa fa-address-card"></i>Reservation</a></li>
+            <li><a href="services.html"><i class="fa fa-clone"></i>Services</a></li>
+            <li><a href="contact.html"><i class="fa fa-phone"></i>Contact</a></li>
+        </ul>
+
+    </nav>
+    <main class="index">
+        <div class="hero">
+            <img src="images/HeroHotel1.jpg" alt="Hotel Bedroom" class="heroimage">
+            <div>
+                <a class="testLink" href="reservation.html">Make a Reservation</a>
+            </div>
+        </div>
+        <div class="templeActivities">
+            <div id="templeInfo">
+                <h3>Temple Attending Activities</h3>
+                <ul id="activities">
+                    <li>Baptisms</li>
+                    <li>Initiatory</li>
+                    <li>Endowment</li>
+                    <li>Sealing</li>
+                                    
+                </ul>
+            </div>
+            <img src="images/eternal_Family.jpg" alt="Eternal Family image" class="activityImage">
+
+        </div>
+        <div class="templeSummary">
+            <h3>South Africa Johannesburg Temple</h3>
+            <ul class="summary">
+                <li>7 Jubilee Rd Parktown<br>
+                    Johannesburg, South Africa<br>
+                    2193</li>
+                <li>Phone:<br> (27) 11-654-1540</li>
+                <li>Open:<br> Tuesday-Saturday</li>
+                <li>For a detailed list of times navigate to the <a href="temple.html">temple page</a></li>
+            </ul>
+
+            <img src="images/" alt="joburg Temple" class="joburgHome">
+
+        </div>
+        <div class="contactInfo">
+            <h3 class="contactHeading">Contact Information:</h3>
+
+            <div class="contactMain">
+                <p>Phone: 208-600-7159<br>
+                    email: templeinnsuites.org<br>
+                    Follow us: <br></p>
+                <a href="http://facebook.com" target="blank"><img src="http://niftybuttons.com/classic/facebook.png"
+                        alt="facebook icon"></a>
+                <a href="http://twitter.com" target="blank"><img src="http://niftybuttons.com/classic/twitter.png" alt="twitter icon"></a>
+                <img src="images/map-headquarter.jpg" alt="Google Map of Temple Inn and Suites Head Office" class="contactMap">
+            </div>
+
+
+        </div>
+    </main>
+    <footer>
+        <div id="date"></div>
+        <p class="citation">&COPY;2019 &verbar;Julius Kashihakumwa&verbar;Temple Inn & Suites &verbar;<a href="temples.html">Temples</a></p>
+    </footer>
+    <script src="scripts/menu.js"></script>
+    <script src="scripts/currentdate.js"></script>
+    <script src="scripts/templeactivities.js"></script>
+
+</body>
+
 </html>
