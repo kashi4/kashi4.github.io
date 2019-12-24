@@ -43,6 +43,37 @@ function clickMe() {
 
    
 }
+
+// variables Naming Rules
+
+/*var fullAge = true;
+var fullAge = 38;
+console.log(fullAge);
+
+var firstName = "Julius";
+var lastName = "Kashihakumwa";
+console.log(firstName,lastName,fullAge);
+
+let person =
+    */
+
+    // variables and type coersion(joining strings) 
+    var fullAge = 38;
+    console.log(fullAge);
+    
+    var firstName, lastName, isMarried,hasKids;
+    firstName = "Julius";
+    lastName = "Kashihakumwa";
+    isMarried = true;
+    hasKids =true;
+
+
+    
+    /*
+    first Name is a string, but full age is a integer, but java script will 
+    convert it into a sring so that it can be printed out onna console
+    as a string as well */
+    console.log(firstName +" " + lastName + " "+ "black Male who is"+ " "+fullAge +"years old"+ "and is "+ " " + hasKids +" "+ "he is married");
     
 
                    
