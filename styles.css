@@ -2,7 +2,7 @@
 /* HEADER */
 /* ----------------------------------------------------- */
 header {
-    background-image:linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)),url(images/website-images/carl-heyerdahl-KE0nC8-58MQ-unsplash.jpg);
+    background-image:url(images/website-images/carl-heyerdahl-KE0nC8-58MQ-unsplash.jpg);
     background-size: cover;
     background-position: center;
     height: 100vh;
@@ -14,6 +14,16 @@ header {
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
+}
+
+h1 {
+    margin: 0;
+    color: rgb(246, 240, 252);
+    font-size: 200%;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    word-spacing: 4px;
 }
 
 .logo {
@@ -38,15 +48,15 @@ header {
 .main-nav li a:link, 
 .main-nav li a:visited{
     padding: 10px 0;
-    color: #fff;
-    text-decoration: none;
+    color: rgba(72, 71, 78, 0.671);
+    text-decoration:none;
     text-transform: uppercase;
-    font-size: 90%;
+    font-size: 100%;
     border-bottom: 2px solid transparent;
     transition: border-bottom 0.2s;
 }
 
 .main-nav li a:hover,
 .main-nav li a:active {
-    border-bottom: 2px solid #e67e22;
+    border-bottom: 2px solid #260b86;
 }
