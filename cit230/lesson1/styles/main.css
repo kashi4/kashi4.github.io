@@ -6,28 +6,34 @@ body {
     /* font-family: sans-serif; Ubuntu, sans-serif; */
     color: #000; /* #xxxxxx */;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+    background-image:linear-gradient(rgba(209, 199, 199, 0.767),rgba(0, 0, 0, 0.7)),url(/cit230/lesson1/images/alesia-kazantceva-XLm6-fPwK5Q-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
 }
 
 h1 {
     font-size: 2.4rem /* x.xrem  (rem is a unit of measure) */;
-    color: #fff; /* #xxxxxx */;
+    color:whitesmoke; /* #xxxxxx */;
 }
 
 h2 {
     font-size: 2.0rem; /* x.xrem */;
     text-align: center;
     border-bottom: 1px solid rgba(187, 187, 187, 0.438);
+    color:whitesmoke;
 }
 
-header, main, footer {
+h2,header, main, footer {
     margin: 1.25rem auto;
     padding: .5rem;
     max-width: 800px; /* xxxpx (px = pixel is a unit of measure)  */;
+    color: black;
 }
 header, footer, footer a {
     text-align: center;
     background-color:rgba(124, 0, 128, 0.767) /* */;
-    color: whitesmoke;
+    color:#fff;
     /* Comment */
 }
 
@@ -47,4 +53,6 @@ ul {
     /* text-align: center; */
     margin: 0 auto;
     max-width: 300px;
+    color: black;
 }
+
