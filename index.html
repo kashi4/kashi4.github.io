@@ -13,33 +13,68 @@
         <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,300italic' rel='stylesheet' type='text/css'>
         <title>Julius Kashihakumwa's Portfoio</title>
     </head>
-    <body>
-        <header>
-            <nav>
-                <div class="row">
-                     <img src="/images/website-images/joe-cook-bntv2OJLpLk-unsplash.jpg" alt="julius's logo" class="logo">
-                    <ul class="main-nav js--main-nav">
-                       <li><a href="/cit230/lesson1/index.html">Web Front Development:CIT 230</a></li>
-                        <li><a href="/cit261/index.html">Mobile Application Deveolpment:CIT 261</a></li>
-                        <li><a href="/LinasFoodies/index.html">Lina's Foodies</a></li>
-                        <li><a href="/javascript_course/">Java Scripts</a></li>
-                        <li><a href="/templeProject/home.html">Sign Up</a></li>
-                        <li><a href="/cit261/ProjectAssessment/final.html">Gallery</a></li>
-                        <li><a href="#">Contacts</a></li>
-                    </ul>
-                    <a class="mobile-nav-icon js--nav-icon"><i class="ion-navicon-round"></i></a>
-                </div>
-            </nav>
-            <div class="hero-text-box">
-                <h1>Welcome to Julius Kashihakumwa's Website Page.<br>Explore Web Development on your own.</h1>
-                <a class="btn btn-full js--scroll-to-plans" href="#">Sign In</a>
-                <a class="btn btn-ghost js--scroll-to-start" href="#">Show me more</a>
+    <header>
+        <nav>
+            <div class="row">
+                <h4>J Kashihakumwa</h4>
             </div>
+                
+                <ul class="main-links">
+                   <li><a href="/cit230/lesson1/index.html">Web Front Development</a></li>
+                    <li><a href="/cit261/index.html">Mobile Application </a></li>
+                    <li><a href="/LinasFoodies/index.html">Lina's Foodies</a></li>
+                    <li><a href="/cit261/ProjectAssessment/final.html">Gallery</a></li>
+                    <li><a href="#">Contacts</a></li>
+                </ul>
+            </div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </nav>
+    </header>
+    
+    <body>
+        <section class="section-form">
+            <div class="row">
+                <h2>Please Fill in This Form</h2>
+            </div>
+        <form class="form">
+            Name:<input type="text"><br> 
+            Last Name: <input type="text"><br>
+            Password: <input type="password" name="password"><br>
+            Gender:<br>
+             <input type="radio" name="gender" value="male">Male<br>
+             <input type="radio" name="gender" value="female">Female<br>
+             <input type="radio" name="gender" value="other">Other<br>
             
-        </header>
+            Birthday: <input type="date"><br>
+            Email: <input type="email" required><br>
+            Cell Number: <input type="text" required><br>
+            
+            Pets:<br>
+                <input type="checkbox" name="pets"><br>
+                <input type="checkbox" name="pets"><br>
+                <input type="checkbox" name="pets"><br>
 
-<body>
- 
-</body>
+            Cars:<br>
+            <select name="cars">
+                <option value="Volvo">Volvo</option><br>
+                <option value="Toyota">Toyota</option><br>
+                <option value="Volkswagen">Volkswagen</option><br>
+                <option value="Chevy">Chevy</option>
+            </select><br>
+
+            <div>
+                <label for="comments" class="align-top">Comments</label>
+                <textarea name="Comments" id="Comments" cols="60" rows="10"></textarea>
+            </div><br>
+            <input type="submit" value="Register Now" " ">
+            <input type="reset"><br>
+           
+           
+
+        </form>
+    </section>  
+      </body>
 
 </html>
