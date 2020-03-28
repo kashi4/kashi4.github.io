@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700&display=swap');
+
+*{
+    margin: 0;
+}
+
+body {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    max-width:1140px;
+    margin: auto;
+    
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+header{
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    border-bottom: 1px solid #423940;
+    padding: 0px 15px;
+    z-index: 10;
+
+}
+
+header .row{
+    justify-content: space-between;
+    align-items: center;
+}
+header .brand-name a {
+    text-decoration: none;
+    font-size: 22px;
+    font-weight: 600;
+    color: #ffffff;
+    text-transform: uppercase;
+    position: relative;
+}
+
+header .brand-name a:: before{
+    content: '';
+    height: 3px;
+    background-color: #ffffff;
+    width: 100%;
+    position: absolute;
+    left: 0px;
+    bottom: opx;
+}
+header .navbar{
+    
+}
+
+header .navbar ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+header .navbar ul li{
+    display: inline-block;
+    margin-left: 35px;
+    color: #0000;
+}
+
+header .navbar ul li a{
+    font-size: 15px;
+    text-decoration: none;
+    color: #fff;
+    display: block;
+    list-style: 72px;
+    font-weight: 600;
+    position: relative;
+}
+
+header .navbar ul li a::before{
+    content: '';
+    height: 3px;
+    background-color:#808080;
+    width: 0%;
+    position: absolute;
+    right: 0;
+    bottom: 1px;
+    transition: all .5s ease;
+}
+header .navbar ul li a:hover::before{
+    width: 100%;
+    left:0;
+    
+}
+.home{
+    min-height: 100vh;
+    background-image: url(/images/IMG_0700.JPG);
+    background-size: cover;
+    background-position: center;
+    padding: 15px;
+}
+
+.home .full-screen{
+    min-height: 100vh;
+}
+
+.home .home-content{
+    flex: 0 0 100%;
+    max-height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-self: center;
+}
+
+.home .home-content .block{
+   color:#808080;
+    flex: 0 0 75%;
+    max-width: 75%;
+    padding-left: 35px;
+    border-left: 5px solid #ffffff;
+    margin-top: 50px;
+  
+}
+
+.home .home-content .block h6{
+    color:#ffffff;
+    font-size: 16px;
+    font-weight: 500;
+    margin: 0;
+    padding: 0;
+   
+}
+.home .home-content .block h1{
+    color:#ffffff;
+    font-size: 40px;
+    font-weight: 600;
+    
+}
+.home .home-content .block h3{
+    color:#808080;
+    font-size: 23px;
+    font-weight: 500;
+    margin: 0;
+    padding: 0;
+    
+}
+
+.home .home-content .block .resume-btn{
+    padding-top: 18px;
+}
+.home .home-content .block .resume-btn a{
+    border-radius: 4px;
+    color: #ffffff;
+    border: 1px solid #ffffff;
+    padding: 12px 25px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 13px;
+    text-transform: uppercase;
+    font-weight: 600;
+    transition: all .5s ease;
+    background-color: transparent;
+}
+
+.home .home-content .block .resume-btn a:hover{
+    background-color: #ffffff;
+    color:#000000;
+    
+}
