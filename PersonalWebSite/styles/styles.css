@@ -95,7 +95,7 @@ header .navbar ul li a:hover::before{
 }
 .home{
     min-height: 100vh;
-    background-image: url(/images/back4.jpeg);
+    background-image: url(/images/IMG_07041.jpg);
     background-size: cover;
     background-position: center;
     padding: 15px;
@@ -174,7 +174,7 @@ header .navbar ul li a:hover::before{
 /* ----------------------------------------------------- */
 
 .section-portfolio {
-    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(/images/backgroundimg13.jpg);
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(/images/backgroundimg2.jpg);
    color: black;
     background-attachment: fixed;
     background-size: cover;
